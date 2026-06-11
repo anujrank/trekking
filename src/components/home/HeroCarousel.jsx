@@ -13,6 +13,7 @@ function HeroCarousel() {
 
   return (
     <div className="h-screen max-h-[750px] overflow-hidden relative w-full bg-slate-900">
+      {/* Slide 1 */}
       {currentSlide === 0 && (
         <div className="animate-fadeIn relative h-full w-full">
           <img
@@ -21,7 +22,8 @@ function HeroCarousel() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/20 to-black/60" />
-          <div className="absolute right-12 md:right-40 top-1/2 -translate-y-1/2 space-y-5 text-right max-w-2xl z-10">
+          {/* Kept right alignment for the container, but changed text to text-left */}
+          <div className="absolute right-12 md:right-40 top-1/2 -translate-y-1/2 space-y-5 text-left max-w-2xl z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md">
               Explore the Majestic <br /> Himalayas
             </h1>
@@ -37,6 +39,7 @@ function HeroCarousel() {
         </div>
       )}
 
+      {/* Slide 2 */}
       {currentSlide === 1 && (
         <div className="animate-fadeIn relative h-full w-full">
           <img
@@ -61,6 +64,7 @@ function HeroCarousel() {
         </div>
       )}
 
+      {/* Slide 3 */}
       {currentSlide === 2 && (
         <div className="animate-fadeIn relative h-full w-full">
           <img
@@ -69,7 +73,8 @@ function HeroCarousel() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/20 to-black/60" />
-          <div className="absolute right-12 md:right-40 top-1/2 -translate-y-1/2 space-y-5 text-right max-w-2xl z-10">
+          {/* Kept right alignment for the container, but changed text to text-left */}
+          <div className="absolute right-12 md:right-40 top-1/2 -translate-y-1/2 space-y-5 text-left max-w-2xl z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md">
               Create Memories in the <br /> Wild
             </h1>

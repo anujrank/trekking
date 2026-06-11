@@ -10,7 +10,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative w-full h-96 overflow-hidden">
         <img
-          src="/about-hero.jpg"
+          src="/footer.png"
           alt="About Us Hero"
           className="w-full h-full object-cover"
         />
@@ -52,7 +52,7 @@ export default function About() {
           </div>
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="/about-story.jpg"
+              src="/about1.png"
               alt="Our Story"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />

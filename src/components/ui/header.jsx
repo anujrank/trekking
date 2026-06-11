@@ -1,11 +1,13 @@
 'use client'
 
 import React, { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import { GiMountainClimbing } from 'react-icons/gi'
 import { HiMenu, HiX } from 'react-icons/hi'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -38,15 +40,22 @@ function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-200 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 hover:bg-white/10"
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
+                    isActive
+                      ? 'text-orange-400 bg-white/20'
+                      : 'text-gray-200 hover:text-orange-400 hover:bg-white/10'
+                  }`}
+                >
+                  {item.name}
+                </a>
+              )
+            })}
           </nav>
 
           {/* CTA Button */}
@@ -69,16 +78,23 @@ function Header() {
         {isOpen && (
           <div className="md:hidden pb-4 border-t border-gray-700">
             <nav className="flex flex-col space-y-2">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-200 hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 hover:bg-white/10 block"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
+              {navItems.map((item) => {
+                const isActive = pathname === item.href
+                return (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 block ${
+                      isActive
+                        ? 'text-orange-400 bg-white/20'
+                        : 'text-gray-200 hover:text-orange-400 hover:bg-white/10'
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                )
+              })}
               <button className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 w-full mt-4">
                 Book Now
               </button>
