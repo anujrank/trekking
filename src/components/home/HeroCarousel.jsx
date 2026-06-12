@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -11,96 +11,148 @@ function HeroCarousel() {
     setCurrentSlide((prev) => (prev - 1 + 3) % 3)
   }
 
+  // Injecting the custom CSS animations dynamically so you don't need to change tailwind.config.js
+  useEffect(() => {
+    const styleId = 'slider-reveal-animations'
+    if (!document.getElementById(styleId)) {
+      const style = document.createElement('style')
+      style.id = styleId
+      style.innerHTML = `
+        @keyframes traveleRevealUp {
+          0% { transform: translateY(110%); opacity: 0; }
+          100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes traveleFade {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+        .animate-reveal {
+          animation: traveleRevealUp 1.1s cubic-bezier(0.25, 1, 0.3, 1) forwards;
+        }
+        .animate-fade {
+          animation: traveleFade 0.8s ease-in-out forwards;
+        }
+      `
+      document.head.appendChild(style)
+    }
+  }, [])
+
   return (
-    <div className="h-screen max-h-[750px] overflow-hidden relative w-full bg-slate-900">
+    <div className="h-screen max-h-[750px] overflow-hidden relative w-full bg-slate-900 font-sans">
+      
       {/* Slide 1 */}
       {currentSlide === 0 && (
-        <div className="animate-fadeIn relative h-full w-full">
-          <img
-            src="/hero-1.png"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/20 to-black/60" />
-          {/* Kept right alignment for the container, but changed text to text-left */}
-          <div className="absolute right-12 md:right-40 top-1/2 -translate-y-1/2 space-y-5 text-left max-w-2xl z-10">
-            <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md">
-              Explore the Majestic <br /> Himalayas
-            </h1>
-            <p className="text-lg md:text-2xl text-gray-100">
-              Discover breathtaking mountain trails, stunning landscapes,
-              <br /> and unforgettable trekking experiences across the
-              Himalayas.
-            </p>
-            <button className="bg-white text-slate-900 font-semibold py-3 px-8 rounded-lg hover:bg-slate-100 transition-all shadow-lg transform hover:-translate-y-0.5">
-              Start Your Journey
-            </button>
+        <div className="animate-fade relative h-full w-full">
+          <img src="/hero-1.png" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/40" />
+          
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
+            <div className="max-w-5xl mx-auto space-y-5">
+              {/* Title Mask */}
+              <div className="overflow-hidden py-2 block">
+                <h1 className="animate-reveal text-3xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-wide drop-shadow-sm">
+                  Explore the Majestic <br /> Himalayas
+                </h1>
+              </div>
+              {/* Paragraph Mask */}
+              <div className="overflow-hidden py-1 block">
+                <p style={{ animationDelay: '250ms' }} className="animate-reveal text-lg md:text-xl lg:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
+                  Discover breathtaking mountain trails, stunning landscapes,
+                  <br /> and unforgettable trekking experiences across the Himalayas.
+                </p>
+              </div>
+              {/* Button Mask */}
+              <div className="overflow-hidden py-3 block">
+                <div style={{ animationDelay: '450ms' }} className="animate-reveal">
+                  <button className="bg-green-600 cursor-pointer text-white font-bold uppercase tracking-wider text-xs md:text-sm py-4 px-9 rounded-sm hover:bg-neutral-900 transition-colors duration-300 shadow-md">
+                    Start Your Journey
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
 
       {/* Slide 2 */}
       {currentSlide === 1 && (
-        <div className="animate-fadeIn relative h-full w-full">
-          <img
-            src="/hero-2.png"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
-          <div className="absolute left-12 md:left-40 top-1/2 -translate-y-1/2 space-y-5 text-left max-w-2xl z-10">
-            <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md">
-              Discover Hidden Mountain
-              <br /> Trails
-            </h1>
-            <p className="text-lg md:text-2xl text-gray-100">
-              Experience thrilling adventures and uncover
-              <br /> nature's most spectacular trekking routes.
-            </p>
-            <button className="bg-white text-slate-900 font-semibold py-3 px-8 rounded-lg hover:bg-slate-100 transition-all shadow-lg transform hover:-translate-y-0.5">
-              Explore Treks
-            </button>
+        <div className="animate-fade relative h-full w-full">
+          <img src="/hero-2.png" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/40" />
+          
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
+            <div className="max-w-5xl mx-auto space-y-5">
+              {/* Title Mask */}
+              <div className="overflow-hidden py-2 block">
+                <h1 className="animate-reveal text-3xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-wide drop-shadow-sm">
+                  Discover Hidden Mountain Trails
+                </h1>
+              </div>
+              {/* Paragraph Mask */}
+              <div className="overflow-hidden py-1 block">
+                <p style={{ animationDelay: '250ms' }} className="animate-reveal text-lg md:text-xl lg:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
+                  Experience thrilling adventures and uncover
+                  <br /> nature's most spectacular trekking routes.
+                </p>
+              </div>
+              {/* Button Mask */}
+              <div className="overflow-hidden py-3 block">
+                <div style={{ animationDelay: '450ms' }} className="animate-reveal">
+                  <button className="bg-green-600 cursor-pointer text-white font-bold uppercase tracking-wider text-xs md:text-sm py-4 px-9 rounded-sm hover:bg-neutral-900 transition-colors duration-300 shadow-md">
+                    Explore Treks
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
 
       {/* Slide 3 */}
       {currentSlide === 2 && (
-        <div className="animate-fadeIn relative h-full w-full">
-          <img
-            src="/hero-3.png"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/20 to-black/60" />
-          {/* Kept right alignment for the container, but changed text to text-left */}
-          <div className="absolute right-12 md:right-40 top-1/2 -translate-y-1/2 space-y-5 text-left max-w-2xl z-10">
-            <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md">
-              Create Memories in the <br /> Wild
-            </h1>
-            <p className="text-lg md:text-2xl text-gray-100">
-              Escape the ordinary and immerse yourself in nature
-              <br /> with carefully planned trekking and camping experiences.
-            </p>
-            <button className="bg-white text-slate-900 font-semibold py-3 px-8 rounded-lg hover:bg-slate-100 transition-all shadow-lg transform hover:-translate-y-0.5">
-              View Treks
-            </button>
+        <div className="animate-fade relative h-full w-full">
+          <img src="/hero-3.png" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/40" />
+          
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
+            <div className="max-w-5xl mx-auto space-y-5">
+              {/* Title Mask */}
+              <div className="overflow-hidden py-2 block">
+                <h1 className="animate-reveal text-3xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-wide drop-shadow-md">
+                  Create Memories in <br />the Wild
+                </h1>
+              </div>
+              {/* Paragraph Mask */}
+              <div className="overflow-hidden py-1 block">
+                <p style={{ animationDelay: '250ms' }} className="animate-reveal text-lg md:text-xl lg:text-2xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
+                  Escape the ordinary and immerse yourself in nature
+                  <br /> with carefully planned trekking and camping experiences.
+                </p>
+              </div>
+              {/* Button Mask */}
+              <div className="overflow-hidden py-3 block">
+                <div style={{ animationDelay: '450ms' }} className="animate-reveal">
+                  <button className="bg-green-600 cursor-pointer text-white font-bold uppercase tracking-wider text-xs md:text-sm py-4 px-9 rounded-sm hover:bg-neutral-900 transition-colors duration-300 shadow-md">
+                    View Treks
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
 
-      {/* Left Arrow */}
+      {/* Navigation Controls */}
       <button
         onClick={prevSlide}
-        className="absolute left-5 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-white text-white hover:text-slate-900 cursor-pointer border border-white/20 transition-all duration-300 text-2xl p-3 rounded-full z-20 backdrop-blur-sm"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/15 text-white transition-all duration-300 px-3 py-6 rounded-sm z-20 cursor-pointer border border-white/10 text-lg"
       >
         ❮
       </button>
 
-      {/* Right Arrow */}
       <button
         onClick={nextSlide}
-        className="absolute right-5 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-white text-white hover:text-slate-900 cursor-pointer border border-white/20 transition-all duration-300 text-2xl p-3 rounded-full z-20 backdrop-blur-sm"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/15 text-white transition-all duration-300 px-3 py-6 rounded-sm z-20 cursor-pointer border border-white/10 text-lg"
       >
         ❯
       </button>

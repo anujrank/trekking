@@ -20,7 +20,7 @@ export default function About() {
             <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
               About Trek Adventures
             </h1>
-            <p className="text-xl text-gray-100 max-w-2xl mx-auto">
+            <p className="text-xl text-white max-w-2xl mx-auto">
               Dedicated to creating unforgettable mountain experiences
             </p>
           </div>
@@ -32,27 +32,27 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="space-y-2">
-              <h2 className="text-sm font-bold tracking-wider uppercase text-slate-500 flex items-center gap-2">
-                <GoDash className="text-xl text-slate-900" />
+              <h2 className="text-sm font-bold tracking-wider uppercase text-black flex items-center gap-2">
+                <GoDash className="text-xl text-emerald-400" />
                 Our Story
               </h2>
               <h3 className="text-4xl font-bold text-slate-900">
                 Born from a Passion for Mountains
               </h3>
             </div>
-            <p className="text-slate-600 text-lg leading-relaxed">
+            <p className="text-black text-lg leading-relaxed">
               Trek Adventures was founded in 2015 by a group of experienced mountaineers who shared a common vision: to make trekking accessible, safe, and transformative for everyone. What started as a small initiative with just 5 guides has grown into a trusted name in the trekking industry.
             </p>
-            <p className="text-slate-600 text-lg leading-relaxed">
+            <p className="text-black text-lg leading-relaxed">
               Our journey has been defined by our commitment to excellence, safety, and sustainable tourism. We believe that every trek is more than just a physical journey—it's a spiritual reconnection with nature and oneself.
             </p>
-            <p className="text-slate-600 text-lg leading-relaxed">
+            <p className="text-black text-lg leading-relaxed">
               Today, we've guided over 5,000 trekkers across 50+ routes, maintained a 100% safety record, and built a community of adventure enthusiasts who share our values.
             </p>
           </div>
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="/about1.png"
+              src="/about-us.png"
               alt="Our Story"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -61,24 +61,24 @@ export default function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 px-6 bg-slate-50">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-slate-900 mb-16">
             Our Mission & Vision
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             {/* Mission */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-orange-500">
+            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-emerald-400">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
-              <p className="text-slate-600 leading-relaxed text-lg">
+              <p className="text-black leading-relaxed text-lg">
                 To provide world-class trekking experiences that are safe, sustainable, and transformative. We are committed to connecting adventurers with the breathtaking beauty of the Himalayas while preserving these pristine ecosystems and supporting local communities.
               </p>
             </div>
 
             {/* Vision */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-red-500">
+            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-emerald-400">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Vision</h3>
-              <p className="text-slate-600 leading-relaxed text-lg">
+              <p className="text-black leading-relaxed text-lg">
                 To be the most trusted and innovative trekking company in South Asia, known for exceptional service, environmental stewardship, and empowering individuals to discover their true potential through mountaineering adventures.
               </p>
             </div>
@@ -94,44 +94,44 @@ export default function About() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Safety */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-lg">
-              <FaShieldAlt className="text-white text-2xl" />
+            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
+              <FaShieldAlt className="text-slate-900 text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Safety First</h3>
-            <p className="text-slate-600">
+            <p className="text-black">
               Rigorous safety protocols and trained guides ensuring every trek is secure and well-managed.
             </p>
           </div>
 
           {/* Passion */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-lg">
-              <FaHiking className="text-white text-2xl" />
+            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
+              <FaHiking className="text-slate-900 text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Passionate</h3>
-            <p className="text-slate-600">
+            <p className="text-black">
               Dedicated professionals who love mountains and genuinely care about your journey.
             </p>
           </div>
 
           {/* Community */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-lg">
-              <FaUsers className="text-white text-2xl" />
+            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
+              <FaUsers className="text-slate-900 text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Community</h3>
-            <p className="text-slate-600">
+            <p className="text-black">
               Supporting local communities and creating positive impact through responsible tourism.
             </p>
           </div>
 
           {/* Sustainability */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-lg">
-              <FaLeaf className="text-white text-2xl" />
+            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
+              <FaLeaf className="text-slate-900 text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Sustainable</h3>
-            <p className="text-slate-600">
+            <p className="text-black">
               Committed to preserving nature and promoting eco-friendly trekking practices.
             </p>
           </div>
@@ -139,15 +139,15 @@ export default function About() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-slate-900 to-blue-900">
+      <section className="py-20 px-6 bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-16">
             By The Numbers
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-orange-400 mb-2">5000+</div>
-              <p className="text-gray-300 text-lg">Happy Trekkers</p>
+              <div className="text-5xl font-bold text-emerald-400 mb-2">5000+</div>
+              <p className="text-white text-lg">Happy Trekkers</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-orange-400 mb-2">50+</div>
