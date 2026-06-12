@@ -70,7 +70,7 @@ function AboutUs() {
           <hr className="border-2 border-green-200/50" />
 
           {/* Bottom Section: Clean Row Statistics Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-5xl">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-left max-w-5xl">
             <div className="space-y-1">
               <h3 className="text-4xl md:text-5xl font-bold text-slate-950 tracking-tight">
                 25+

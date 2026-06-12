@@ -140,7 +140,7 @@ function HeroCarousel() {
                     style={{ animationDelay: isActive ? "400ms" : "0ms" }}
                     className="animate-reveal opacity-0"
                   >
-                    <button className="bg-emerald-600 cursor-pointer text-white font-semibold tracking-wide text-sm sm:text-base py-3 px-6 sm:px-8 rounded-full hover:bg-emerald-500 hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-900/20">
+                    <button className="bg-[#e5a93b] cursor-pointer text-white font-semibold tracking-wide text-sm sm:text-base py-3 px-6 sm:px-8 rounded-xl hover:bg-emerald-500 hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-900/20">
                       {slide.btnText}
                     </button>
                   </div>
@@ -152,29 +152,48 @@ function HeroCarousel() {
         );
       })}
 
-      {/* REPOSITIONED NAVIGATION WRAPPER FOR MOBILE */}
-      {/* On mobile: placed compactly at the bottom right. On desktop (sm+): floats on absolute left/right edges */}
-      <div className="absolute bottom-5 right-5 sm:right-auto sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 sm:w-10 sm:px-6 z-30 flex items-center gap-2 sm:justify-between sm:gap-0 pointer-events-none">
-        
-        {/* Previous Button */}
+      {/* --- सुधरा हुआ नेविगेशन सिस्टम (FIXED NAVIGATION) --- */}
+      {/* मोबाइल लेआउट (Mobile View): बॉटम राइट में एक साथ रहेंगे */}
+      <div className="absolute bottom-5 right-5 z-30 flex items-center gap-2 sm:hidden">
         <button
           onClick={prevSlide}
-          className="bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-slate-900 transition-all duration-300 p-3 rounded-lg cursor-pointer border border-white/10 shadow-lg pointer-events-auto"
+          className="bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-slate-900 transition-all duration-300 p-3 rounded-lg cursor-pointer border border-white/10 shadow-lg"
           aria-label="Previous slide"
         >
-          <HiChevronLeft className="text-sm sm:text-lg" />
+          <HiChevronLeft className="text-sm" />
         </button>
-
-        {/* Next Button */}
         <button
           onClick={nextSlide}
-          className="bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-slate-900 transition-all duration-300 p-3 rounded-lg cursor-pointer border border-white/10 shadow-lg pointer-events-auto"
+          className="bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-slate-900 transition-all duration-300 p-3 rounded-lg cursor-pointer border border-white/10 shadow-lg"
           aria-label="Next slide"
         >
-          <HiChevronRight className="text-sm sm:text-xl"  />
+          <HiChevronRight className="text-sm" />
         </button>
-        
       </div>
+
+      {/* डेस्कटॉप लेआउट (Desktop View): स्क्रीन के Left और Right किनारों पर वर्टिकली सेंटर रहेंगे */}
+      <div className="hidden sm:block absolute inset-x-0 top-1/2 -translate-y-1/2 z-30 pointer-events-none px-4 md:px-8">
+        <div className="flex justify-between w-full">
+          {/* Left Button */}
+          <button
+            onClick={prevSlide}
+            className="bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-slate-900 transition-all duration-300 p-3 sm:p-4 rounded-full cursor-pointer border border-white/10 shadow-lg pointer-events-auto target-left"
+            aria-label="Previous slide"
+          >
+            <HiChevronLeft className="text-xl md:text-2xl" />
+          </button>
+
+          {/* Right Button */}
+          <button
+            onClick={nextSlide}
+            className="bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-slate-900 transition-all duration-300 p-3 sm:p-4 rounded-full cursor-pointer border border-white/10 shadow-lg pointer-events-auto target-right"
+            aria-label="Next slide"
+          >
+            <HiChevronRight className="text-xl md:text-2xl" />
+          </button>
+        </div>
+      </div>
+      {/* -------------------------------------------------- */}
 
       {/* Indicators */}
       <div className="absolute bottom-8 left-6 sm:left-1/2 sm:-translate-x-1/2 z-30 flex items-center gap-2 sm:gap-3">

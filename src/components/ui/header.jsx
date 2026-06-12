@@ -25,7 +25,7 @@ function Header() {
 
   return (
     /* PERFECTED: Kept bg-white but added a subtle border-b for modern flat aesthetics */
-    <header className="bg-white border-b border-slate-100 shadow-md sticky top-0 z-50 transition-colors duration-300">
+    <header className="bg-white border-b-2 border-[#e5a93b] shadow-md sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
@@ -50,8 +50,8 @@ function Header() {
                   /* FIXED: Text colors adjusted to slate-600/slate-900 with clear light slate hover backgrounds */
                   className={`px-3 py-2 rounded-md text-sm font-semibold transition-all duration-200 ${
                     isActive
-                      ? 'text-emerald-600 bg-emerald-50'
-                      : 'text-slate-900 hover:text-emerald-600 hover:bg-slate-50'
+                      ? 'text-[#e5a93b] bg-[#e5a93b]/20 font-black'
+                      : 'text-slate-900 hover:text-[#e5a93b] hover:bg-slate-50'
                   }`}
                 >
                   {item.name}
@@ -105,7 +105,7 @@ function Header() {
                 )
               })}
               <div className="px-4 pt-4">
-                <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 w-full shadow-lg shadow-emerald-500/20">
+                <button className="bg-[#e5a93b] hover:bg-black text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 w-full shadow-lg shadow-emerald-500/20">
                   Book Now
                 </button>
               </div>

@@ -137,7 +137,7 @@ function PopularDestinations() {
 
         {/* CTA */}
         <div className="flex justify-center mt-10">
-          <button className="bg-[#e5a93b] hover:bg-black text-white px-6 py-3 rounded-lg flex items-center gap-2 transition">
+          <button className="bg-[#e5a93b] hover:bg-black text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-all duration-500 cursor-pointer">
             View All Destinations
             <MdOutlineKeyboardDoubleArrowRight />
           </button>
