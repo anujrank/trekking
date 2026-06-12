@@ -68,7 +68,7 @@ export default function About() {
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             {/* Mission */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-emerald-400">
+            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-blue-900">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
               <p className="text-black leading-relaxed text-lg">
                 To provide world-class trekking experiences that are safe, sustainable, and transformative. We are committed to connecting adventurers with the breathtaking beauty of the Himalayas while preserving these pristine ecosystems and supporting local communities.
@@ -76,7 +76,7 @@ export default function About() {
             </div>
 
             {/* Vision */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-emerald-400">
+            <div className="bg-white p-8 rounded-2xl shadow-md border-l-4 border-blue-900">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Vision</h3>
               <p className="text-black leading-relaxed text-lg">
                 To be the most trusted and innovative trekking company in South Asia, known for exceptional service, environmental stewardship, and empowering individuals to discover their true potential through mountaineering adventures.
@@ -94,8 +94,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Safety */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
-              <FaShieldAlt className="text-slate-900 text-2xl" />
+            <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg">
+              <FaShieldAlt className="text-white text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Safety First</h3>
             <p className="text-black">
@@ -105,8 +105,8 @@ export default function About() {
 
           {/* Passion */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
-              <FaHiking className="text-slate-900 text-2xl" />
+            <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg">
+              <FaHiking className="text-white text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Passionate</h3>
             <p className="text-black">
@@ -116,8 +116,8 @@ export default function About() {
 
           {/* Community */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
-              <FaUsers className="text-slate-900 text-2xl" />
+            <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg">
+              <FaUsers className="text-white text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Community</h3>
             <p className="text-black">
@@ -127,8 +127,8 @@ export default function About() {
 
           {/* Sustainability */}
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center shadow-lg">
-              <FaLeaf className="text-slate-900 text-2xl" />
+            <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center shadow-lg">
+              <FaLeaf className="text-white text-2xl" />
             </div>
             <h3 className="text-xl font-bold text-slate-900">Sustainable</h3>
             <p className="text-black">
@@ -146,19 +146,19 @@ export default function About() {
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-emerald-400 mb-2">5000+</div>
+              <div className="text-5xl font-bold text-[#e5a93b] mb-2">5000+</div>
               <p className="text-white text-lg">Happy Trekkers</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-orange-400 mb-2">50+</div>
+              <div className="text-5xl font-bold text-[#e5a93b] mb-2">50+</div>
               <p className="text-gray-300 text-lg">Trek Routes</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-orange-400 mb-2">25+</div>
+              <div className="text-5xl font-bold text-[#e5a93b] mb-2">25+</div>
               <p className="text-gray-300 text-lg">Expert Guides</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-orange-400 mb-2">100%</div>
+              <div className="text-5xl font-bold text-[#e5a93b] mb-2">100%</div>
               <p className="text-gray-300 text-lg">Safety Record</p>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function About() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-slate-900">Rajesh Kumar</h3>
-              <p className="text-orange-500 font-semibold mb-3">Founder & Lead Guide</p>
+              <p className="text-[#e5a93b] font-semibold mb-3">Founder & Lead Guide</p>
               <p className="text-slate-600">
                 15+ years of mountaineering experience. Expert on Himalayan trails with a passion for safety and sustainability.
               </p>
@@ -195,7 +195,7 @@ export default function About() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-slate-900">Priya Sharma</h3>
-              <p className="text-orange-500 font-semibold mb-3">Medical Officer</p>
+              <p className="text-[#e5a93b] font-semibold mb-3">Medical Officer</p>
               <p className="text-slate-600">
                 Certified mountaineering medic ensuring health and safety of all trekkers. Emergency response specialist.
               </p>
@@ -209,7 +209,7 @@ export default function About() {
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-slate-900">Vikram Singh</h3>
-              <p className="text-orange-500 font-semibold mb-3">Head Guide</p>
+              <p className="text-[#e5a93b] font-semibold mb-3">Head Guide</p>
               <p className="text-slate-600">
                 Certified wilderness guide with expertise in route planning and local culture education. 12 years experience.
               </p>
@@ -227,7 +227,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center text-white font-bold">
                   ✓
                 </div>
               </div>
@@ -241,7 +241,7 @@ export default function About() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center text-white font-bold">
                   ✓
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function About() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center text-white font-bold">
                   ✓
                 </div>
               </div>
@@ -269,7 +269,7 @@ export default function About() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center text-white font-bold">
                   ✓
                 </div>
               </div>
@@ -283,7 +283,7 @@ export default function About() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center text-white font-bold">
                   ✓
                 </div>
               </div>
@@ -297,7 +297,7 @@ export default function About() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center text-white font-bold">
                   ✓
                 </div>
               </div>

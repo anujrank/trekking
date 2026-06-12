@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="relative w-full text-white bg-[#1a120e] overflow-hidden font-sans">
+    <footer className="relative w-full text-white bg-black overflow-hidden font-sans">
       {/* ========================================== */}
       {/* TOP SECTION: UPPER CTA PROMO BLOCK        */}
       {/* ========================================== */}
@@ -60,19 +60,22 @@ function Footer() {
           {/* Column 1: Brand & Social Handles (Width 4/12) */}
           <div className="lg:col-span-4 space-y-5">
             {/* Logo Layout Header resembling the design framework */}
-            <div className="inline-flex items-center bg-white rounded-xl shadow-sm">
+            <div className="flex flex-col items-start gap-5 shadow-sm">
               <img
                 src="/logo.png"
                 alt="Trek Adventures Logo"
-                className="h-36 w-auto object-contain"
+                className="h-32 w-56 object-contain -mb-6"
               />
+
+              <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-xs">
+                Adventure Family Travel, Trekking & Adventure Experts.
+                <br />
+                Explore India's Best Treks — Your Trusted Partner for Himalayan
+                Adventures.
+              </p>
             </div>
 
             {/* Managed text fields */}
-            <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-xs">
-              Adventure Family Travel, Trekking & Adventure Experts. <br />
-Explore India's Best Treks — Your Trusted Partner for Himalayan Adventures.
-            </p>
 
             {/* Circular Rounded Social Buttons */}
             <div className="flex items-center space-x-3 pt-2">
@@ -188,27 +191,27 @@ Explore India's Best Treks — Your Trusted Partner for Himalayan Adventures.
               Our Newsletter
             </h3>
             <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec.
+              Join our community of explorers and receive trek updates, special
+              discounts, and expert travel insights every month.
             </p>
 
             {/* Pill-shaped Container Subscription Form input wrapper */}
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="relative flex items-center w-full max-w-md bg-white/5 border border-white/10 rounded-full p-1.5 focus-within:border-[#e5a93b]/50 transition-colors duration-300"
+              className="flex items-center w-full max-w-md bg-white/5 border border-white/10 rounded-full focus-within:border-[#e5a93b]/50 transition-colors duration-300"
             >
               <input
                 type="email"
                 placeholder="Your Email:"
-                className="w-full bg-transparent text-white placeholder-gray-500 pl-4 pr-32 text-xs md:text-sm focus:outline-none"
+                className="w-full bg-transparent text-white placeholder-gray-500 pl-4 pr-4 text-xs md:text-sm focus:outline-none"
                 required
               />
               <button
                 type="submit"
-                className="absolute right-1.5 top-1.5 bottom-1.5 bg-[#e5a93b] hover:bg-[#d4982a] text-white font-bold text-xs px-5 rounded-full inline-flex items-center space-x-1 transition-all duration-300 shrink-0"
+                className="bg-[#e5a93b] hover:bg-[#d4982a] text-white font-bold text-xs px-5 py-2.5 rounded-full inline-flex items-center space-x-1 transition-all duration-300 shrink-0"
               >
                 <span>Subscribe</span>
-                <svg className="w-3 h-3 fill-current" viewBox="0 0 20 20">
+                <svg className="w-3 h-3 fill-current">
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
