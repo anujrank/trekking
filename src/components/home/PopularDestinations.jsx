@@ -139,7 +139,7 @@ function PopularDestinations() {
       </div>
 
       <div className="flex justify-center pt-4">
-        <button className="bg-slate-900 text-white font-medium px-6 py-3 rounded-lg flex gap-2 items-center hover:bg-slate-800 transition-all shadow-md">
+        <button className="bg-[#e5a93b] text-white font-medium px-6 py-3 rounded-lg flex gap-2 items-center hover:bg-black cursor-pointer transition-all duration-500 shadow-md">
           View All Destinations
           <MdOutlineKeyboardDoubleArrowRight className="text-xl" />
         </button>
