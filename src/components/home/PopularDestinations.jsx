@@ -30,7 +30,7 @@ const destinationsData = [
   {
     id: 4,
     title: 'Kashmir',
-    img: '/kashmir.png',
+    img: '/j&k.png',
     desc: 'Snowy peaks, alpine meadows, and unforgettable mountain adventures.',
   },
   {
