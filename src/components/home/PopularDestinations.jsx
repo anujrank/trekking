@@ -45,6 +45,12 @@ const destinationsData = [
     img: '/sikkim.png',
     desc: 'Pristine forests, glaciers, and stunning mountain vistas.',
   },
+  {
+    id: 7,
+    title: 'Arunachal Pradesh',
+    img: '/ap.png',
+    desc: 'Enchanting landscapes, diverse wildlife, and vibrant culture.',
+  }
 ]
 
 function PopularDestinations() {
