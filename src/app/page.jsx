@@ -18,11 +18,12 @@ function Page() {
       {/* hero section */}
       <HeroCarousel />
 
+       {/* about us */}
+      <AboutUs />
+      
       {/* Popular Destinations */}
       <PopularDestinations />
 
-      {/* about us */}
-      <AboutUs />
 
       {/* Featured Treks */}
       <FeaturedTreks />

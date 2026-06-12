@@ -2,10 +2,9 @@ import React from "react";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const destinationsData = [
@@ -72,15 +71,12 @@ function PopularDestinations() {
         {/* Slider */}
         <div className="relative">
           <Swiper
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Autoplay, Navigation]}
             slidesPerView={1}
             spaceBetween={16}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
             }}
             navigation={{
               prevEl: ".dest-prev",
@@ -100,7 +96,6 @@ function PopularDestinations() {
                 spaceBetween: 24,
               },
             }}
-            className="pb-14"
           >
             {destinationsData.map((dest) => (
               <SwiperSlide key={dest.id}>
@@ -129,12 +124,13 @@ function PopularDestinations() {
             ))}
           </Swiper>
 
-          {/* Arrows */}
-          <button className="dest-prev hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg items-center justify-center">
+          {/* Left Arrow */}
+          <button className="dest-prev flex absolute -left-2 md:-left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg items-center justify-center hover:bg-[#e5a93b] hover:text-white transition">
             <HiChevronLeft size={24} />
           </button>
 
-          <button className="dest-next hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg items-center justify-center">
+          {/* Right Arrow */}
+          <button className="dest-next flex absolute -right-2 md:-right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg items-center justify-center hover:bg-[#e5a93b] hover:text-white transition">
             <HiChevronRight size={24} />
           </button>
         </div>
