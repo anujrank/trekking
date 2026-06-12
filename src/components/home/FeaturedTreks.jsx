@@ -116,7 +116,7 @@ function FeaturedTreks() {
                 
                 {/* Floating Location Badge */}
                 <span className="absolute top-4 left-4 inline-flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold bg-white/95 text-slate-900 shadow-sm backdrop-blur-xs border border-black/20">
-                  <svg className="w-3 h-3 text-emerald-400 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
+                  <svg className="w-3 h-3 text-[#e5a93b] fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                   </svg>
@@ -157,7 +157,7 @@ function FeaturedTreks() {
                     <span className="text-[10px] text-black block font-bold uppercase tracking-wider leading-none mb-0.5">
                       Per Person
                     </span>
-                    <span className="text-xl font-black text-emerald-400 tracking-tight">
+                    <span className="text-xl font-black text-[#e5a93b] tracking-tight">
                       {item.price}
                     </span>
                   </div>
@@ -168,7 +168,7 @@ function FeaturedTreks() {
         })}
       </div>
       <div className="flex flex-col justify-center items-center mt-8">
-        <button className='bg-green-700 text-white px-7 py-3 cursor-pointer rounded-lg hover:bg-black transition-all duration-500'>View All Trek</button>
+        <button className='bg-[#e5a93b] font-semibold text-white px-7 py-3 cursor-pointer rounded-lg hover:bg-black transition-all duration-500'>View All Trek</button>
       </div>
     </div>
   )

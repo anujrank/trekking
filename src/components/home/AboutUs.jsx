@@ -12,7 +12,7 @@ function AboutUs() {
             <img
               src="/about2.png"
               alt="Adventurer exploring ruins"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-out"
             />
           </div>
         </div>
@@ -20,7 +20,7 @@ function AboutUs() {
         {/* Right Side: Content and Secondary Image */}
         <div className="w-full lg:w-[55%] space-y-6 text-left">
           {/* Pill Badge */}
-          <span className="inline-block px-5 py-1.5 border border-green-500/50 text-green-700 rounded-full text-sm font-medium">
+          <span className="inline-block px-5 py-1.5 border border-#e5a93b text-[#e5a93b] rounded-full text-sm font-medium">
             About Us
           </span>
 
@@ -28,7 +28,7 @@ function AboutUs() {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
             Curating Exceptional <br />
             Travel{" "}
-            <span className="text-green-700 italic font-serif font-medium">
+            <span className="text-[#e5a93b] italic font-serif font-medium">
               Experiences
             </span>
           </h2>
@@ -50,7 +50,7 @@ function AboutUs() {
 
               {/* Call to Action Button */}
               <div className="pt-2">
-                <button className="bg-green-700 cursor-pointer text-white font-medium px-6 py-3 rounded-lg flex gap-2 items-center hover:bg-black transition-all duration-500 shadow-md text-sm">
+                <button className="bg-[#e5a93b] cursor-pointer text-white font-medium px-6 py-3 rounded-lg flex gap-2 items-center hover:bg-black transition-all duration-500 shadow-md text-sm">
                   Learn More
                   <FiArrowUpRight className="text-base" />
                 </button>
@@ -62,7 +62,7 @@ function AboutUs() {
               <img
                 src="/about1.png"
                 alt="Scenic travel destination"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-out"
               />
             </div>
           </div>

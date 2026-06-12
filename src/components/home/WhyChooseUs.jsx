@@ -35,14 +35,14 @@ function WhyChooseUs() {
           <img
             src="/why-choose-us2.png"
             alt="Hiker looking at mountain lake"
-            className="w-full h-full object-cover rounded-2xl shadow-sm"
+            className="w-full h-full object-cover rounded-xl hover:scale-105 transition-transform duration-500 ease-out"
           />
         </div>
 
         {/* Middle Column: Typography & Checklists */}
         <div className="lg:col-span-5 flex flex-col justify-between h-full space-y-6">
           <div className="space-y-4">
-            <span className="text-green-700 uppercase tracking-widest font-extrabold text-xs md:text-sm block">
+            <span className="text-[#e5a93b] uppercase tracking-widest font-extrabold text-xs md:text-sm block">
               Why Choose Us
             </span>
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-[1.15]">
@@ -70,7 +70,7 @@ function WhyChooseUs() {
               <img
                 src="/why-choose-us1.png"
                 alt="Two hikers on a summit"
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-out rounded-xl"
               />
             </div>
 
@@ -83,7 +83,7 @@ function WhyChooseUs() {
                   >
                     {/* Orange Check Icon */}
                     <svg
-                      className="w-5 h-5 text-green-700 flex-shrink-0"
+                      className="w-5 h-5 text-[#e5a93b] flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -97,12 +97,6 @@ function WhyChooseUs() {
                   </li>
                 ))}
               </ul>
-
-              <div className="pt-2">
-                <button className="px-6 py-2 border-2 border-green-700 text-slate-800 text-sm font-bold rounded-full hover:bg-green-700 cursor-pointer hover:text-white transition-colors duration-300">
-                  View All
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -111,17 +105,17 @@ function WhyChooseUs() {
         <div className="lg:col-span-3 flex flex-col gap-5 h-full justify-between">
           {cards.map((card) => (
             <div
-  key={card.id}
-  className="group bg-black text-white p-6 md:p-8 rounded-[2rem] border border-green-700/10 shadow-lg flex flex-col justify-center flex-1 transition-all duration-300 hover:scale-105 hover:bg-green-700"
->
-  <h3 className="text-xl font-bold mb-3 tracking-tight text-white">
-    {card.title}
-  </h3>
+              key={card.id}
+              className="group bg-black text-white p-6 md:p-8 rounded-[2rem] border border-green-700/10 shadow-lg flex flex-col justify-center flex-1 transition-all duration-300 hover:scale-105 hover:bg-green-700"
+            >
+              <h3 className="text-xl font-bold mb-3 tracking-tight text-white">
+                {card.title}
+              </h3>
 
-  <p className="text-xs md:text-sm text-slate-400 leading-relaxed font-light transition-colors duration-300 group-hover:text-white">
-    {card.desc}
-  </p>
-</div>
+              <p className="text-xs md:text-sm text-slate-400 leading-relaxed font-light transition-colors duration-300 group-hover:text-white">
+                {card.desc}
+              </p>
+            </div>
           ))}
         </div>
       </div>
