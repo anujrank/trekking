@@ -9,7 +9,7 @@ import ContactForm from "@/components/home/ContactForm";
 import Pricing from "@/components/home/Pricing";
 import Testimonial from "@/components/home/Testimonial";
 import TravelGuid from "@/components/home/TravelGuid";
-import Faq from "@/components/home/Faq";
+import FAQ from "@/components/home/FAQ";
 function Page() {
   return (
    <>
@@ -38,7 +38,7 @@ function Page() {
    <TravelGuid />
 
     {/* faq section */}
-   <Faq />
+   <FAQ />
    </>
   );
 }

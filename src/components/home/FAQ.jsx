@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Faq() {
+function FAQ() {
   // State to track which accordion item is currently open
   const [openIndex, setOpenIndex] = useState(0); // Default first one open as seen in image_bad7cc.png
 
@@ -122,4 +122,4 @@ function Faq() {
   );
 }
 
-export default Faq;
+export default FAQ;
