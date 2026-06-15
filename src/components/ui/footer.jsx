@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 // Make sure to import Lucide icons or use SVGs for social media if needed, 
 // but standard font/layout styling is handled below.
 
@@ -41,9 +43,9 @@ function Footer() {
           </p>
           {/* Social Icons Placeholder */}
           <div className='flex gap-3 mt-2 text-white opacity-80'>
-            <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'>i</span>
+            <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'><FaInstagram /></span>
             <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'>p</span>
-            <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'>f</span>
+            <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'><FaFacebookF /></span>
           </div>
         </div>
 
