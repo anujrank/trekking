@@ -32,10 +32,10 @@ export default function Process() {
       </div>
 
       {/* Steps Section */}
-      <div className="relative mx-auto flex max-w-5xl justify-between gap-10">
+      <div className="relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl justify-between gap-10">
         
         {/* Horizontal Connecting Line */}
-        <div className="absolute left-12 right-12 top-6 h-[1px] bg-[#e3eae6] z-10" />
+        <div className="hidden lg:block absolute left-12 right-12 top-6 h-[1px] bg-[#e3eae6] z-10" />
 
         {steps.map((step) => (
           <div key={step.id} className="relative z-20 flex flex-1 flex-col items-start text-left">
