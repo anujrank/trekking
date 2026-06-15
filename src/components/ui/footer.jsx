@@ -36,7 +36,7 @@ function Footer() {
         <div className='flex flex-col gap-4'>
           <div className='flex items-center gap-2 font-semibold text-white'>
             {/* Simple Compass Icon representation */}
-            <img src="/logo.png" alt="Logo" className='w-full h-28' />
+            <img src="/logo.png" alt="Logo" className='w-fit h-28' />
           </div>
           <p className='text-[#8FD8BF] leading-relaxed max-w-xs'>
             Custom adventure itineraries for active families. 62 destinations, 15 years of experience, 500+ trips planned.
