@@ -1,50 +1,45 @@
 "use client";
 
 import React from "react";
-import HeroCarousel from "@/components/home/HeroCarousel";
-import PopularDestinations from "@/components/home/PopularDestinations";
-import AboutUs from "@/components/home/AboutUs";
-import FeaturedTreks from "@/components/home/FeaturedTreks";
+import HeroSection from "@/components/home/HeroSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
-import ChooseOurActivity from "@/components/home/ChooseOurActivity";
-import SuccessTrekSpotlights from "@/components/home/SuccessTrekSpotlights";
-import CtaSection from "@/components/home/CtaSection";
-import Gallery from "@/components/home/Gallery";
-import FAQ from "@/components/home/FAQ";
-
+import Process from "@/components/home/Process";
+import Destination from "@/components/home/Destination";
+import ContactForm from "@/components/home/ContactForm";
+import Pricing from "@/components/home/Pricing";
+import Testimonial from "@/components/home/Testimonial";
+import TravelGuid from "@/components/home/TravelGuid";
+import Faq from "@/components/home/Faq";
 function Page() {
   return (
-    <>
-      {/* hero section */}
-      <HeroCarousel />
+   <>
+   {/* hero section */}
+   <HeroSection />
 
-       {/* about us */}
-      <AboutUs />
-      
-      {/* Popular Destinations */}
-      <PopularDestinations />
+   {/* why choose us section */}
+   <WhyChooseUs />
 
+   {/* process section */}
+   <Process />
 
-      {/* Featured Treks */}
-      <FeaturedTreks />
+   {/* destination section */}
+   <Destination />
 
-      {/* why choose us content */}
-      <WhyChooseUs />
+   {/* contact form section */}
+   <ContactForm />
 
-      {/* choose our activities */}
-      <ChooseOurActivity />
+   {/* pricing section */}
+   <Pricing />
 
-      {/* success trip */}
-      <SuccessTrekSpotlights />
+    {/* testimonial section */}
+   <Testimonial />
 
-      {/* cta section */}
-      <CtaSection />
-      {/* gallery */}
-      <Gallery />
+   {/* travel guide section */}
+   <TravelGuid />
 
-      {/* faq section */}
-      <FAQ />
-    </>
+    {/* faq section */}
+   <Faq />
+   </>
   );
 }
 

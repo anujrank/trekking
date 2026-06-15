@@ -1,116 +1,125 @@
-'use client'
+import React, { useState } from 'react';
 
-import React, { useState } from 'react'
+function Faq() {
+  // State to track which accordion item is currently open
+  const [openIndex, setOpenIndex] = useState(0); // Default first one open as seen in image_bad7cc.png
 
-function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null)
+  const faqData = [
+    {
+      question: "How is this different from a travel agent?",
+      answer: "Traditional travel agents book flights and hotels and take commissions on those bookings. We don't book anything — we design the plan. Our only incentive is building you the best possible trip. We're independent, unbiased, and the AI planner is available 24/7."
+    },
+    {
+      question: "Is the AI planner actually good enough?",
+      answer: "The free 2-day preview will answer that better than anything we could say. It takes 2 minutes and costs nothing. Our planner has 15 years of family adventure travel knowledge and gets better with every conversation."
+    },
+    {
+      question: "My kids have special needs / very young ages — can you still help?",
+      answer: "Absolutely. We plan trips for families with kids as young as 2, families with wheelchair accessibility needs, and families managing multiple dietary restrictions. The intake form captures everything and we build around your specific situation."
+    },
+    {
+      question: "What if I'm not happy with my itinerary?",
+      answer: "We revise until it's right — unlimited revisions are included in both paid packages. If it still doesn't meet your needs within 48 hours of purchase, we refund in full. No questions asked."
+    },
+    {
+      question: "Do you plan domestic US trips too?",
+      answer: "Yes — national park road trips, Pacific Northwest adventures, Utah canyon country, and more. International trips are more popular because families need more help navigating unfamiliar logistics, but we love domestic adventure planning too."
+    }
+  ];
 
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
-
-  // Your exact text from the original array preserved completely
-  const faqs = [
-    {
-      question: "What fitness level is required for the trek?",
-      answer:
-        "Most treks require basic fitness and endurance. We recommend regular walking, jogging, or cardio exercise at least 3-4 weeks before your trek departure.",
-    },
-    {
-      question: "What is included in the trek package?",
-      answer:
-        "Our packages typically include premium tent accommodations, all nutritious mountain meals, certified wilderness guide support, forestry permits, and safety equipment.",
-    },
-    {
-      question: "Is the trek safe for beginners?",
-      answer:
-        "Yes, many of our routes are specifically structured to welcome beginner trekkers. They feature gentle ascents and are led by expert safety-certified guides.",
-    },
-    {
-      question: "What should I pack for the trek?",
-      answer:
-        "We recommend sturdy trekking shoes, layered warm fleece clothing, a comfortable 40-60L backpack, insulated water bottles, personal medication, and rain layers.",
-    },
-    {
-      question: "What is your cancellation and refund policy?",
-      answer:
-        "Refund eligibility depends entirely on your cancellation timeline relative to the batch departure dates. Please review our terms page for complete timeline thresholds.",
-    },
-  ]
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
-    <section className="max-w-7xl mx-auto py-20 px-6 md:px-12 lg:px-16 font-sans selection:bg-slate-900 selection:text-white bg-[#FAF9F6]">
-      {/* 2-Column Responsive Split Layout inspired by image_94c4c0.png */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        
-        {/* Left Column: Heading Block & Badge with Image Styling Controls */}
-        <div className="lg:col-span-5 space-y-6">
-          {/* FAQ Outline Pill Badge */}
-          <div className="inline-block">
-            <span className="text-[#e5a93b] border border-[#e5a93b]/40 bg-[#e5a93b]/5 font-bold text-xs px-3 py-1 rounded-full tracking-wider uppercase">
-              FAQ's
-            </span>
+    <div className="w-full bg-white font-sans text-slate-800">
+      
+      {/* 1. Newsletter Banner Section */}
+      <div className="bg-[#E6F4EA] py-12 px-6 md:px-12 dynamic-banner">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="max-w-2xl">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 mb-2">
+              Get our best family travel guides — free
+            </h2>
+            <p className="text-sm md:text-base text-slate-600">
+              Destination deep-dives, packing lists, and planning tips straight to your inbox. No spam, unsubscribe anytime.
+            </p>
           </div>
+          
+          <div className="w-full md:w-auto flex flex-col sm:flex-row items-center gap-3">
+            <input 
+              type="email" 
+              placeholder="your@email.com" 
+              className="w-full sm:w-64 px-4 py-2.5 rounded-full border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#0D6246]"
+            />
+            <button className="w-full sm:w-auto bg-[#0D6246] hover:bg-[#08422F] text-white font-medium text-sm px-6 py-2.5 rounded-full transition-colors whitespace-nowrap">
+              Send me the guides
+            </button>
+          </div>
+        </div>
+      </div>
 
-          {/* Styled Header Split */}
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-800 leading-[1.15]">
-            Frequently Asked <br />
-            <span className="text-[#e5a93b] italic font-serif font-normal block mt-1">Questions</span>
+      {/* 2. FAQ Section */}
+      <div className="max-w-3xl mx-auto px-4 py-16">
+        
+        {/* Section Header */}
+        <div className="text-center mb-10">
+          <span className="text-xs font-bold tracking-widest text-[#0D6246] uppercase block mb-2">
+            FAQ
+          </span>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900">
+            Common questions
           </h2>
-
-          <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-sm">
-           Planning your next trekking adventure? Find answers to the most common questions about our treks, safety standards, bookings, accommodations, guides, and equipment. We aim to make your journey smooth, safe, and memorable from start to finish. Whether you're a beginner or an experienced trekker, our FAQ section provides the information you need before hitting the trail. Explore the details below and get ready for an unforgettable mountain experience.
-          </p>
         </div>
 
-        {/* Right Column: Borderless Accordion Stack */}
-        <div className="lg:col-span-7 divide-y divide-slate-200">
-          {faqs.map((faq, index) => {
-            const isOpen = openIndex === index
-
+        {/* Accordion Wrapper */}
+        <div className="space-y-4">
+          {faqData.map((item, index) => {
+            const isOpen = openIndex === index;
             return (
-              <div key={index} className="py-4 first:pt-0 last:pb-0">
-                {/* Accordion Row Header Trigger Button */}
+              <div 
+                key={index} 
+                className="border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden"
+              >
+                {/* Accordion Header Trigger */}
                 <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full flex items-center py-4 text-left font-bold text-base md:text-lg text-slate-800 hover:text-[#e5a93b] transition-colors duration-200 gap-4 group"
+                  onClick={() => toggleAccordion(index)}
+                  className="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 hover:bg-slate-50 transition-colors text-sm md:text-base"
                 >
-                  {/* Minimalist Leading Plus / Minus Indicator */}
-                  <span className="flex items-center justify-center w-6 h-6 shrink-0 text-slate-700 group-hover:text-[#e5a93b] transition-transform duration-300">
+                  <span>{item.question}</span>
+                  <span className={`transform transition-transform duration-200 text-[#0D6246] font-semibold text-lg`}>
                     {isOpen ? (
-                      <svg className="w-5 h-5 stroke-current stroke-[2]" fill="none" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
+                      // Up Chevron
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
                       </svg>
                     ) : (
-                      <svg className="w-5 h-5 stroke-current stroke-[2]" fill="none" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      // Down Chevron
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     )}
                   </span>
-
-                  <span className="tracking-tight font-semibold">{faq.question}</span>
                 </button>
 
-                {/* Content Panel Transition Area */}
-                <div
-                  className={`grid transition-all duration-300 ease-in-out text-slate-600 ${
-                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                {/* Accordion Content Panel */}
+                <div 
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                    isOpen ? 'max-h-60 border-t border-slate-100' : 'max-h-0'
                   }`}
                 >
-                  <div className="overflow-hidden">
-                    <div className="pl-10 pr-4 pb-4 text-sm md:text-base leading-relaxed text-slate-500">
-                      {faq.answer}
-                    </div>
+                  <div className="p-5 text-sm md:text-base text-slate-600 leading-relaxed bg-[#F8F9FA]">
+                    {item.answer}
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
 
       </div>
-    </section>
-  )
+    </div>
+  );
 }
 
-export default FAQ
+export default Faq;

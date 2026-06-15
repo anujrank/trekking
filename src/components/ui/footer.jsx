@@ -1,246 +1,96 @@
-"use client";
-
-import React from "react";
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import React from 'react'
+// Make sure to import Lucide icons or use SVGs for social media if needed, 
+// but standard font/layout styling is handled below.
 
 function Footer() {
   return (
-    <footer className="relative w-full text-white bg-black overflow-hidden font-sans">
-      {/* ========================================== */}
-      {/* TOP SECTION: UPPER CTA PROMO BLOCK        */}
-      {/* ========================================== */}
-      <div
-        className="relative w-full py-24 px-6 md:px-12 text-center bg-cover bg-center"
-        style={{
-          // Subtle landscape background contrast behind the dark overlay
-          backgroundImage: `url('/footer.png')`,
-        }}
-      >
-        {/* Darkened visual layer matching image_9aef8.png */}
-        <div className="absolute inset-0 bg-black/70 mix-blend-multiply" />
+    <footer className='bg-[#043324] text-[#A3E2CD] font-sans'>
+      
+      {/* Top Banner Section */}
+      <div className='flex flex-col items-center text-center gap-6 py-16 px-6 max-w-4xl mx-auto'>
+        <h1 className='text-4xl md:text-5xl font-serif font-semibold text-white tracking-tight'>
+          Your family's best trip is one conversation away
+        </h1>
+        <p className='text-md md:text-lg text-[#DFFAF0] max-w-2xl'>
+          Tell us where you want to go, who's coming, and what your family loves. We handle the rest.
+        </p>
+        
+        <button className='bg-[#5CDBB5] text-[#043324] font-medium py-3 px-8 rounded-full flex items-center gap-2 hover:bg-[#49c29e] transition-all my-2 text-sm md:text-base'>
+          Build my free itinerary 
+          <span className="text-xs">↗</span>
+        </button>
+        
+        <p className='text-xs md:text-sm text-[#8FD8BF] opacity-90'>
+          No credit card · Free Day 1–2 preview · Full plan from $349
+        </p>
+      </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto space-y-6">
-          {/* Headline featuring the iconic gold italic text treatment */}
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
-            Get{" "}
-            <span className="text-[#e5a93b] italic font-serif font-normal">
-              Closer
-            </span>{" "}
-            With Us &amp; Get <br className="hidden sm:inline" />
-            Special Promo
-          </h2>
+      <hr className='border-[#08422F] max-w-7xl mx-auto px-6 opacity-30' />
 
-          <p className="text-gray-300 text-xs md:text-sm max-w-xl mx-auto leading-relaxed opacity-90">
-            Discover the beauty of India's most spectacular trekking
-            destinations. Adventure awaits at every step. Join us today for
-            special offers.
+      {/* Main Footer Content Links */}
+      <div className='max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 text-sm'>
+        
+        {/* Brand Column */}
+        <div className='flex flex-col gap-4'>
+          <div className='flex items-center gap-2 font-semibold text-white'>
+            {/* Simple Compass Icon representation */}
+            <img src="/logo.png" alt="Logo" className='w-full h-28' />
+          </div>
+          <p className='text-[#8FD8BF] leading-relaxed max-w-xs'>
+            Custom adventure itineraries for active families. 62 destinations, 15 years of experience, 500+ trips planned.
           </p>
+          {/* Social Icons Placeholder */}
+          <div className='flex gap-3 mt-2 text-white opacity-80'>
+            <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'>i</span>
+            <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'>p</span>
+            <span className='w-7 h-7 border border-[#08422F] rounded-full flex items-center justify-center bg-[#063f2d] cursor-pointer hover:bg-[#08422F]'>f</span>
+          </div>
+        </div>
 
-          {/* Action Link Button */}
-          <div className="pt-2">
-            <button className="bg-[#e5a93b] hover:bg-[#d4982a] text-white font-bold text-sm px-8 py-3.5 rounded-full inline-flex items-center space-x-2 transition-all duration-300 shadow-lg shadow-amber-500/10 transform hover:scale-[1.02]">
-              <span>Let's Get Started</span>
-              <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
+        {/* Destinations Column */}
+        <div className='flex flex-col gap-3'>
+          <h4 className='text-[11px] font-bold tracking-widest text-[#5CDBB5] uppercase mb-1'>Destinations</h4>
+          <a href="#" className='hover:text-white transition-colors'>Southeast Asia</a>
+          <a href="#" className='hover:text-white transition-colors'>Central America</a>
+          <a href="#" className='hover:text-white transition-colors'>Africa & Safari</a>
+          <a href="#" className='hover:text-white transition-colors'>Europe</a>
+          <a href="#" className='hover:text-white transition-colors'>All 62 destinations</a>
+        </div>
+
+        {/* Plan Your Trip Column */}
+        <div className='flex flex-col gap-3'>
+          <h4 className='text-[11px] font-bold tracking-widest text-[#5CDBB5] uppercase mb-1'>Plan Your Trip</h4>
+          <a href="#" className='hover:text-white transition-colors'>Free planner tool</a>
+          <a href="#" className='hover:text-white transition-colors'>Pricing & packages</a>
+          <a href="#" className='hover:text-white transition-colors'>How it works</a>
+          <a href="#" className='hover:text-white transition-colors'>About</a>
+        </div>
+
+        {/* Blog Column */}
+        <div className='flex flex-col gap-3'>
+          <h4 className='text-[11px] font-bold tracking-widest text-[#5CDBB5] uppercase mb-1'>Blog</h4>
+          <a href="#" className='hover:text-white transition-colors'>Thailand with kids</a>
+          <a href="#" className='hover:text-white transition-colors'>Vietnam 12-day guide</a>
+          <a href="#" className='hover:text-white transition-colors'>Iceland itinerary</a>
+          <a href="#" className='hover:text-white transition-colors'>Costa Rica guide</a>
+          <a href="#" className='hover:text-white transition-colors'>SEA family guide</a>
+        </div>
+
+      </div>
+
+      {/* Bottom Copyright Bar */}
+      <div className='border-t border-[#063e2d] py-6 px-6'>
+        <div className='max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#8FD8BF] opacity-80'>
+          <div>© 2026 Adventure Travel Co. All rights reserved.</div>
+          <div className='flex gap-6'>
+            <a href="#" className='hover:text-white transition-colors'>Privacy policy</a>
+            <a href="#" className='hover:text-white transition-colors'>Terms of service</a>
           </div>
         </div>
       </div>
 
-      {/* ========================================== */}
-      {/* BOTTOM SECTION: 4-COLUMN CONTENT LINK GRID */}
-      {/* ========================================== */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 pt-20 pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
-          {/* Column 1: Brand & Social Handles (Width 4/12) */}
-          <div className="lg:col-span-4 space-y-5">
-            {/* Logo Layout Header resembling the design framework */}
-            <div className="flex flex-col items-start gap-5 shadow-sm">
-              <img
-                src="/logo.png"
-                alt="Trek Adventures Logo"
-                className="h-32 w-56 object-contain -mb-6"
-              />
-
-              <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-xs">
-                Adventure Family Travel, Trekking & Adventure Experts.
-                <br />
-                Explore India's Best Treks — Your Trusted Partner for Himalayan
-                Adventures.
-              </p>
-            </div>
-
-            {/* Managed text fields */}
-
-            {/* Circular Rounded Social Buttons */}
-            <div className="flex items-center space-x-3 pt-2">
-              <a
-                href="#"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#e5a93b] text-white transition-colors duration-300"
-                aria-label="Facebook"
-              >
-                <FaFacebookF size={14} />
-              </a>
-              <a
-                href="#"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#e5a93b] text-white transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <FaTwitter size={14} />
-              </a>
-              <a
-                href="#"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#e5a93b] text-white transition-colors duration-300"
-                aria-label="YouTube"
-              >
-                <FaYoutube size={14} />
-              </a>
-            </div>
-          </div>
-
-          {/* Column 2: Easy Links (Width 2/12) */}
-          <div className="lg:col-span-2 space-y-4">
-            <h3 className="text-[#e5a93b] font-bold text-sm md:text-base tracking-wide">
-              Easy Links
-            </h3>
-            <ul className="space-y-2.5 text-gray-400 text-xs md:text-sm font-medium">
-              <li>
-                <a
-                  href="/"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  Destinations
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Support Links (Width 2/12) */}
-          <div className="lg:col-span-2 space-y-4">
-            <h3 className="text-[#e5a93b] font-bold text-sm md:text-base tracking-wide">
-              Support Links
-            </h3>
-            <ul className="space-y-2.5 text-gray-400 text-xs md:text-sm font-medium">
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  Booking
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#e5a93b] transition duration-200"
-                >
-                  Online Support
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Inline Capsule Newsletter Form (Width 4/12) */}
-          <div className="lg:col-span-4 space-y-4">
-            <h3 className="text-[#e5a93b] font-bold text-sm md:text-base tracking-wide">
-              Our Newsletter
-            </h3>
-            <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
-              Join our community of explorers and receive trek updates, special
-              discounts, and expert travel insights every month.
-            </p>
-
-            {/* Pill-shaped Container Subscription Form input wrapper */}
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex items-center w-full max-w-md bg-white/5 border border-white/10 rounded-full focus-within:border-[#e5a93b]/50 transition-colors duration-300"
-            >
-              <input
-                type="email"
-                placeholder="Your Email:"
-                className="w-full bg-transparent text-white placeholder-gray-500 pl-4 pr-4 text-xs md:text-sm focus:outline-none"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-[#e5a93b] hover:bg-[#d4982a] text-white font-bold text-xs px-5 py-2.5 rounded-full inline-flex items-center space-x-1 transition-all duration-300 shrink-0"
-              >
-                <span>Subscribe</span>
-                <svg className="w-3 h-3 fill-current">
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-            </form>
-          </div>
-        </div>
-
-        {/* Bottom Horizontal Copyright Strip */}
-        <div className="mt-16 pt-8 border-t border-white/5 text-center md:flex md:justify-between md:items-center text-gray-500 text-xs">
-          <p>&copy; 2026 Trek Adventures. All rights reserved.</p>
-          <div className="flex justify-center space-x-6 mt-3 md:mt-0 opacity-80">
-            <a href="#" className="hover:text-white transition">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition">
-              Terms &amp; Conditions
-            </a>
-            <a href="#" className="hover:text-white transition">
-              Sitemap
-            </a>
-          </div>
-        </div>
-      </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
