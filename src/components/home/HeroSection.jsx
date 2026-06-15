@@ -5,7 +5,7 @@ import { FaCalendarDay, FaCreditCard, FaShieldHeart } from 'react-icons/fa6';
 function HeroSection() {
   return (
     <section 
-      className="w-full min-h-screen bg-cover bg-center relative text-white antialiased flex flex-col justify-between" 
+      className="w-full lg:min-h-screen bg-cover bg-center relative text-white antialiased flex flex-col justify-between" 
       style={{ backgroundImage: "url('/hero.png')" }}
     >
       {/* Dark overlay to match the rich, deep green-tinted atmosphere */}
@@ -28,7 +28,7 @@ function HeroSection() {
             {/* Main Headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium leading-[1.1] tracking-tight">
               Your family's most <br />
-              <span className="text-emerald-300 italic font-normal">unforgettable trip</span> starts here
+              <span className="text-emerald-300 font-semibold">unforgettable trip</span> starts here
             </h1>
 
             {/* Description */}
