@@ -1,4 +1,6 @@
 import React from 'react';
+import { HiSparkles, HiArrowUpRight } from 'react-icons/hi2';
+import { FaCalendarDay, FaCreditCard, FaShieldHeart } from 'react-icons/fa6';
 
 function HeroSection() {
   return (
@@ -11,7 +13,7 @@ function HeroSection() {
 
       {/* Main Content Wrapper (relative to sit above the overlay) */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-between min-h-screen py-6">
-              
+            
         {/* 2. HERO BODY (Split Layout) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center my-auto py-12">
           
@@ -19,7 +21,7 @@ function HeroSection() {
           <div className="lg:col-span-7 space-y-6">
             {/* Tag/Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/10 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase text-emerald-300">
-              <span>⭐</span>
+              <HiSparkles className="w-3.5 h-3.5 text-emerald-300" />
               <span>Adventure travel for active families</span>
             </div>
 
@@ -37,11 +39,11 @@ function HeroSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-emerald-400 hover:bg-emerald-300 text-emerald-950 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200 shadow-lg flex items-center space-x-1">
+              <button className="bg-emerald-400 hover:bg-emerald-300 text-emerald-950 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200 shadow-lg flex items-center space-x-1.5 group">
                 <span>Build my free itinerary</span>
-                <span>↗</span>
+                <HiArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </button>
-              <button className="bg-white/10 hover:bg-white/20 border border-white/20 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200">
+              <button className="bg-white/10 hover:bg-white/20 border border-white/10 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200">
                 View packages
               </button>
             </div>
@@ -73,15 +75,15 @@ function HeroSection() {
         {/* 3. FOOTER TRUST BADGES */}
         <div className="flex flex-wrap gap-x-8 gap-y-3 text-xs md:text-sm font-medium text-emerald-300/90 border-t border-white/10 pt-6 pb-2">
           <div className="flex items-center space-x-2">
-            <span className="text-emerald-400">•</span>
+            <FaCalendarDay className="text-emerald-400 w-3.5 h-3.5" />
             <span>Free 2-day preview</span>
           </div>
           <div className="flex items-center space-x-2">
-            <span className="text-emerald-400">•</span>
+            <FaCreditCard className="text-emerald-400 w-3.5 h-3.5" />
             <span>No credit card</span>
           </div>
           <div className="flex items-center space-x-2">
-            <span className="text-emerald-400">•</span>
+            <FaShieldHeart className="text-emerald-400 w-3.5 h-3.5" />
             <span>100% satisfaction guarantee</span>
           </div>
         </div>
