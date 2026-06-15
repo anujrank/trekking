@@ -1,105 +1,49 @@
-import React from "react";
-const destinations = [
-  {
-    id: 1,
-    img: "/images/destinations/himachal-pradesh.jpg",
-    name: "Himachal Pradesh",
-  },
-  {
-    id: 2,
-    img: "/images/destinations/uttarakhand.jpg",
-    name: "Uttarakhand",
-  },
-  {
-    id: 3,
-    img: "/images/destinations/jammu-kashmir.jpg",
-    name: "Jammu & Kashmir",
-  },
-  {
-    id: 4,
-    img: "/images/destinations/ladakh.jpg",
-    name: "Ladakh",
-  },
-  {
-    id: 5,
-    img: "/images/destinations/sikkim.jpg",
-    name: "Sikkim",
-  },
-  {
-    id: 6,
-    img: "/images/destinations/arunachal-pradesh.jpg",
-    name: "Arunachal Pradesh",
-  },
-  {
-    id: 7,
-    img: "/images/destinations/meghalaya.jpg",
-    name: "Meghalaya",
-  },
-  {
-    id: 8,
-    img: "/images/destinations/nagaland.jpg",
-    name: "Nagaland",
-  },
-  {
-    id: 9,
-    img: "/images/destinations/manipur.jpg",
-    name: "Manipur",
-  },
-  {
-    id: 10,
-    img: "/images/destinations/kerala.jpg",
-    name: "Kerala",
-  },
-  {
-    id: 11,
-    img: "/images/destinations/maharashtra.jpg",
-    name: "Maharashtra",
-  },
-  {
-    id: 12,
-    img: "/images/destinations/west-bengal.jpg",
-    name: "West Bengal",
-  },
-];
-function DestinationHero() {
+'use client'
+import React from 'react'
+import { motion } from 'framer-motion'
+
+function Page() {
   return (
-    <div>
-      {/* destination hero section */}
-      <section className="relative w-full h-screen bg-slate-950 text-white flex items-center justify-center overflow-hidden">
-        {/* Background Image & Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/destination-hero.png"
-            alt="Scenic trekking destination landscape"
-            className="w-full h-full object-cover opacity-40 select-none"
-          />
-          {/* Optional gradient overlay to ensure text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50" />
-        </div>
+    <div className="relative w-full h-screen overflow-hidden bg-[#0d1b2a] flex items-center justify-center">
+      
+      {/* 1. BACKGROUND LAYER: The Sky */}
+      <div 
+        className="absolute inset-0 bg-gradient-to-b from-[#3a86c8] via-[#205072] to-[#0d1b2a] z-0"
+        aria-hidden="true"
+      />
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-2xl mx-auto text-center px-6 md:px-4 space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
-            Explore Our <span className="text-emerald-400">Destinations</span>
-          </h1>
+      {/* 2. ANIMATED TEXT LAYER */}
+      <div className="absolute inset-0 flex items-center justify-center z-10 select-none pointer-events-none">
+        <motion.h1 
+          initial={{ y: "100vh", opacity: 0 }}
+          animate={{ y: "0vh", opacity: 1 }}
+          transition={{ 
+            duration: 1.8, 
+            ease: [0.2, 1, 0.3, 1], // Custom smooth cubic-bezier curve
+            delay: 0.2 
+          }}
+          className="text-[15vw] font-black tracking-tighter text-white/40 uppercase font-sans text-center leading-none"
+          style={{
+            WebkitTextStroke: "1px rgba(255, 255, 255, 0.6)",
+          }}
+        >
+          DISCOVER
+        </motion.h1>
+      </div>
 
-          <p className="text-lg md:text-xl text-slate-300 leading-relaxed font-light">
-            Discover breathtaking trekking destinations around the world. From
-            the majestic Himalayas to the serene trails of Patagonia, we offer a
-            wide range of trekking experiences for adventurers of all levels.
-          </p>
-
-          {/* Added a Call to Action because every good hero section needs one! */}
-          <div className="pt-4">
-            <button className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/20 cursor-pointer">
-              Start Your Adventure
-            </button>
-          </div>
-        </div>
-      </section>
-      {/* destination list */}
+      {/* 3. FOREGROUND LAYER: The Mountain Peak */}
+      {/* Note: For a true overlap, 'mountain-cutout.png' needs to be an image 
+          where the sky is completely transparent, leaving only the mountain rocks.
+      */}
+      <div 
+        className="absolute inset-x-0 bottom-0 h-[65vh] bg-cover bg-bottom z-20"
+        style={{ 
+          backgroundImage: "url('/path-to-your-mountain-cutout.png')",
+        }}
+      />
+      
     </div>
-  );
+  )
 }
 
-export default DestinationHero;
+export default Page

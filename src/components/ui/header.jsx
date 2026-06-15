@@ -14,11 +14,11 @@ function Header() {
 
   // Updated navigation items to match your exact mockup image
   const navItems = [
-    { name: 'Destinations', href: '#destinations' },
+    { name: 'Destination', href: '/destination' },
     { name: 'Planner', href: '#planner' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'Blog', href: '#blog' },
-    { name: 'About', href: '#about' },
+    { name: 'About', href: '/about' },
   ]
 
   return (
