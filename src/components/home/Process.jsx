@@ -20,7 +20,7 @@ export default function Process() {
   ];
 
   return (
-    <div className="bg-[#f7faf9] px-10 py-20 text-center font-sans">
+    <div className="bg-[#f7faf9] rounded-xl px-10 py-20 text-center font-sans">
       {/* Header Section */}
       <div className="mb-14">
         <p className="text-xs font-bold uppercase tracking-widest text-[#0e6245] mb-4">

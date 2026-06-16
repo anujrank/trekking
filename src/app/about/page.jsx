@@ -250,7 +250,7 @@ function Page() {
           <span className="text-xs font-bold uppercase tracking-widest text-[#0F6E56] bg-[#0F6E56]/10 px-3 py-1 rounded-full">
             Real Case Studies
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold mt-8 text-slate-900 tracking-tight">
             A few trips that shaped how I work
           </h2>
         </div>
