@@ -19,6 +19,8 @@ const blogs = [
 
     ### 1. Thailand — Best Overall First-Timer Destination
 
+    ![thailand](/blogimg/thailandblog.png)
+
     **Best for:** First-time Southeast Asia families, food-focused families, ages 5+.
 
     No destination delivers more variety per square mile. Bangkok's urban intensity, Chiang Mai's jungle adventures, and the southern islands are three completely different experiences accessible on a single 10-day itinerary.
@@ -36,6 +38,8 @@ const blogs = [
     ---
 
     ### 2. Vietnam — Best for Cultural Depth and Variety
+
+    ![vietnam](/blogimg/vietnamblog.png)
 
     **Best for:** Culturally curious families, foodie families, teens who engage with history.
 
@@ -55,6 +59,8 @@ const blogs = [
 
     ### 3. Cambodia — Best for History and Wildlife
 
+    ![cambodia](/blogimg/cambodiablog.png)
+
     **Best for:** History-focused families, ages 8+, families wanting something genuinely different.
 
     Angkor Wat is one of the genuine wonders of the world. Children quickly grasp the scale and history of the temple complex.
@@ -72,6 +78,8 @@ const blogs = [
     ---
 
     ### 4. Bali, Indonesia — Best for Families Wanting Balance
+
+    ![bali](/blogimg/baliblog.png)
 
     **Best for:** Mixed-age family groups, surf families, families wanting villa-style accommodation.
 
@@ -91,6 +99,8 @@ const blogs = [
 
     ### 5. Laos — Best for Escaping the Crowds
 
+    ![laos](/blogimg/laosblog.png)
+
     **Best for:** Adventurous families, teens, and repeat Southeast Asia travelers.
 
     Laos remains one of the region's most authentic and least crowded destinations.
@@ -106,6 +116,8 @@ const blogs = [
     ---
 
     ### 6. Borneo, Malaysia — Best for Wildlife Families
+
+    ![borneo](/blogimg/borneoblog.png)
 
     **Best for:** Wildlife lovers, ages 6+, nature-focused families.
 
@@ -145,8 +157,6 @@ const blogs = [
     **Best Ages:** 10+
 
     **Budget:** $6,000–$9,500 for a family of 4
-
-    ---
 
     ## When to Go: Southeast Asia Season Guide
 
@@ -204,103 +214,89 @@ const blogs = [
     dis: "Bangkok chaos, Chiang Mai elephant sanctuaries, and Koh Lanta island kayaking — the classic circuit for active families.",
     time: "10 min read",
     age: "Ages 5+",
-    content:`
-    Vietnam is extraordinary — three distinct regions, each feeling like a different country. The chaotic energy of Hanoi, the jaw-dropping karst limestone of Ha Long Bay, the ancient lantern-lit lanes of Hoi An, and the beaches of Da Nang all exist on a single north-to-south route that works perfectly as a one-way family adventure.
+    content: `
+    # Vietnam Family Adventure Guide
 
-    This is not a "kid-friendly resort" trip. It's a real immersion — street food, motorbike crossings, boat caves, and cooking classes — calibrated so children are participants in the adventure, not spectators.
+    Vietnam is extraordinary — three distinct regions, each feeling like a different country.
 
-    Quick overview
-    Route: Hanoi (3 nights) → Ha Long Bay cruise (2 nights) → Hue (2 nights) → Hoi An (3 nights) → Da Nang (2 nights)
-    Best ages: 6 and up for the full route. Under 6, shorten to Hanoi + Ha Long Bay + Hoi An
-    Best time: February–April. October–December also good for central Vietnam. Avoid August in Hue and Hoi An — typhoon season
-    Budget: $120–$200/day for a family of 4. Vietnam is the best value destination in Southeast Asia
-    Day 1–3 — Hanoi
-    Day 1: Arrival & Hoan Kiem Lake
-    Fly into Noi Bai International Airport. Official taxis only from the airport — Vinasun or Mai Linh, both metered. Check into the Old Quarter — Maison d'Hanoi or La Siesta Diamond are excellent family hotels with genuine Vietnamese character.
+    ## Quick Overview
 
-    First evening: walk the Hoan Kiem Lake circuit at dusk — the pagoda glowing on the water, couples ballroom dancing on the promenade, old men playing chess on stone benches. One of the great evening walks in Asia. End at Bun Cha Huong Lien on Le Van Huu Street — the same restaurant Anthony Bourdain brought President Obama to. Bun cha (grilled pork with cold noodles) costs $2 a bowl.
+    - **Route:** Hanoi → Ha Long Bay → Hue → Hoi An → Da Nang
+    - **Best Ages:** 6+
+    - **Best Time:** February–April
+    - **Budget:** $120–$200/day
 
-    Insider tip: Crossing the street in Hanoi — walk slowly, steadily, never run, make eye contact with oncoming motorbike riders and they flow around you. Hesitation is the danger. Practice on a quiet side street with your kids before tackling the main roads.
-    Day 2: Old Quarter & Hoa Lo Prison
-    Morning: self-guided Old Quarter walk through the 36 Ancient Streets — Silk Street, Paper Street, Tin Street, still partially true today. Duck into Dinh Liet Street for the best banh mi in Hanoi at Banh Mi 25 ($1.50 a sandwich).
+    ### Day 1–3 — Hanoi
 
-    Hoa Lo Prison (the "Hanoi Hilton") — half covering French colonial imprisonment of Vietnamese revolutionaries, half covering American POWs. Honest, complex, and handled with dignity. Recommended for families with kids 10+. 45 minutes.
+    ### Day 1: Arrival & Hoan Kiem Lake
 
-    Day 3: Bat Trang ceramics cycling & cooking class
-    Morning: rent bicycles and cycle 8km to Bat Trang ceramic village on the Red River — a living working village where families have made ceramics for 500 years. Kids can throw their own bowl on a wheel for $5.
+    Fly into Noi Bai International Airport.
 
-    Afternoon: Hoa Sue Cooking Class — small group (max 10), Dong Xuan Market ingredient tour, then 3 hours cooking pho, spring rolls, and Vietnamese coffee dessert. $45/person, minimum age 7.
+    ### Day 2: Old Quarter & Hoa Lo Prison
 
-    Want a custom Vietnam itinerary for your family?
-    Built around your kids' ages, budget, and food restrictions. Free 2-day preview — takes 2 minutes.
+    Morning: self-guided Old Quarter walk.
 
-    Build my free itinerary ↗
-    Day 4–5 — Ha Long Bay
-    Getting there
-    Private minivan from Hanoi to Ha Long Bay — 3.5 hours, $60–$80 for the van. Depart by 8am to board the junk boat by noon.
+    ### Day 3: Bat Trang Ceramics & Cooking Class
 
-    Choosing the right boat
-    Ha Long Bay has 600+ boats. For families, book a boat with maximum 20 guests, private en-suite cabins, and a kayaking program. Heritage Line, Indochina Sails, and Paradise Elegance all hit this brief. A 2-night cruise runs $200–$350/person including all meals, activities, and cabin.
+    Rent bicycles and cycle to Bat Trang village.
 
-    Day 4: Kayaking hidden lagoons
-    The boat departs into 2,000 limestone karst islands rising from jade-green water. First afternoon: kayaking through hidden lagoons only accessible by paddling through a low sea cave at high tide. Then sunset on deck with the islands turning pink and gold around you.
+    ## Day 4–5 — Ha Long Bay
 
-    Insider tip: Pack sea-sickness medication even if your family doesn't normally get seasick — Ha Long Bay's waters are calm inside the bay but the exit/entry can be choppy. Dramamine for kids takes the edge off.
-    Day 5: Sunrise & Sung Sot Cave
-    Wake at 5:30am for sunrise from the top deck — the most photographed moment in Ha Long Bay and deservedly so. Sung Sot Cave (Surprising Cave) is Ha Long's most spectacular — a cathedral-scale cavern with illuminated stalactites stretching 10,000 square meters. Return to Hanoi by 5pm.
+    ### Getting There
 
-    Day 6–7 — Hue
-    Getting there
-    Fly Hanoi to Da Nang (1 hour, $30–$50), then taxi to Hue (2.5 hours, $40). Or take the legendary Reunification Express overnight sleeper — a 4-berth private cabin is a genuine adventure for families. Kids aged 8+ love it; under 6, take the flight.
+    Private minivan from Hanoi to Ha Long Bay.
 
-    Day 6: Imperial Citadel & dragon boat
-    The Citadel was the seat of the Nguyen emperors for 143 years — a vast walled complex of palaces, temples, and gardens. Allow a full morning with a local history guide ($20 at the entrance). Afternoon: board a dragon boat on the Perfume River to Thien Mu Pagoda — Hue's iconic 7-tiered tower. 30-minute river cruise each way, $8 for the boat.
+    ### Choosing the Right Boat
 
-    Day 7: Royal tombs by bicycle
-    Hue has 7 royal tombs in the surrounding hills. Hire bicycles and ride the 10km loop to the three best: Tu Duc (most beautiful, set in pine forest around a lake), Minh Mang (most imperial, geometric gardens), and Khai Dinh (most eccentric, French-influenced concrete mosaic palace on a hill). Full day, $5 bicycle hire, $5 entrance each.
+    Book a boat with private cabins and kayaking.
 
-    Insider tip: Hue's bun bo Hue (spicy beef noodle soup) is completely different from Hanoi's pho — richer, spicier, with lemongrass. It's the best bowl of soup in Vietnam and almost unknown outside the city. Ask your guesthouse for their neighbourhood recommendation.
-    Day 8–10 — Hoi An
-    Getting there
-    Taxi from Hue to Hoi An via the Hai Van Pass (2 hours, $50) — the mountain coastal road that Graham Norton called "the most beautiful road in the world" on Top Gear. Stop at the summit on a clear day for the view south to Da Nang.
+    ## Day 6–7 — Hue
 
-    Day 8: Ancient Town & lantern making
-    Hoi An's Ancient Town — a UNESCO World Heritage Site of 400-year-old trading port architecture — is best walked before 8am before tour groups arrive. The Japanese Covered Bridge (1593), Tan Ky Merchant House, and Fujian Assembly Hall are the three anchors. Evening: the town transforms when 10,000 silk lanterns are lit and boats drift paper lanterns on the Thu Bon River. Join a lantern-making class at Rose Art (3 hours, $12/person) to make your own to release.
+    ### Day 6: Imperial Citadel & Dragon Boat
 
-    Day 9: Bicycle villages & Morning Glory cooking school
-    Morning: rent bicycles and ride the 6km circuit through Cam Thanh village — water coconut palm forests, basket boat rides ($4/person), and rice paddy paths with water buffalo.
+    Explore the Citadel and Perfume River.
 
-    Afternoon: Morning Glory Cooking School — run by chef Trinh Diem Vy, who has cooked for Michelle Obama. White rose dumplings, cao lau noodles, banh xeo (sizzling crepes) — all Hoi An originals. $45/person, ages 8+.
+    ### Day 7: Royal Tombs by Bicycle
 
-    Day 10: Custom tailoring & An Bang Beach
-    Hoi An has 400+ tailors — it's the custom clothing capital of Asia. A made-to-measure linen shirt: $25. A silk ao dai for a daughter: $40. Yaly Couture and Bebe Tailors are the most reliable. Drop your order on Day 8 and collect on Day 10. Afternoon: An Bang Beach, 4km from town — flat water, beach bars, and the freshest seafood grilled to order.
+    Visit Tu Duc, Minh Mang, and Khai Dinh tombs.
 
-    Insider tip: Hoi An gets very crowded March–August. Walk the Ancient Town before 8am or after 7pm when day-trippers from Da Nang have left and the lanterns are lit. Plan your Ancient Town time accordingly.
-    Day 11–12 — Da Nang
-    Day 11: Marble Mountains
-    The Marble Mountains — five limestone hills riddled with Buddhist sanctuaries inside natural cave systems. Climb by elevator ($1.50) and explore Huyen Khong Cave: a natural cathedral where a shaft of light falls on a golden Buddha at noon. Allow 2 hours. Afternoon: Son Tra Peninsula for red-shanked douc langurs — one of the world's most spectacularly colored primates, spotted from the road at dusk.
+    ## Day 8–10 — Hoi An
 
-    Day 12: My Khe Beach & departure
-    30km of white sand, flat water, lifeguards, and excellent beach restaurants. Best morning swim before your afternoon or evening flight home from Da Nang International Airport — just 5 minutes from the beach.
+    ### Day 8: Ancient Town & Lantern Making
 
-    Budget breakdown — family of 4, 12 days
-    Category	Budget range
-    Accommodation (12 nights)	$900–$1,800
-    Ha Long Bay cruise (2 nights, all-inclusive)	$800–$1,400
-    Internal flight (Hanoi–Da Nang or Hanoi–Hue)	$120–$200
-    Activities and tours	$600–$900
-    Food (3 meals/day, street food to mid-range)	$300–$500
-    Transport (taxis, transfers, bicycle hire)	$250–$400
-    Total (international flights not included)	$2,970–$5,200
-    Practical Vietnam guide
-    Visas
-    US, UK, EU, Australian, and Canadian passport holders get 45 days visa-free in Vietnam as of 2023. Most other nationalities need an e-visa ($25, apply at immigration.gov.vn). Always check current policy before travel.
+    Walk through the UNESCO-listed Ancient Town.
 
-    Money
-    Vietnam is largely a cash economy. Withdraw Vietnamese Dong from ATMs at Agribank or Vietcombank (lowest fees). $1 USD ≈ 25,000 VND — carry a thick stack of small bills.
+    ### Day 9: Bicycle Villages & Cooking School
 
-    Getting around
-    Grab works well in major cities. For inter-city transfers, book reputable private taxis through your hotel. Domestic flights on Vietnam Airlines or VietJet are $30–$60 per leg if booked ahead.`
+    Explore Cam Thanh village.
+
+    ### Day 10: Tailoring & An Bang Beach
+
+    Relax at An Bang Beach.
+
+    ## Day 11–12 — Da Nang
+
+    ### Day 11: Marble Mountains
+
+    Explore caves and temples.
+
+    ** Day 12:** My Khe Beach
+
+    Enjoy the beach before departure.
+
+    ## Practical Vietnam Guide
+
+    ### Visas
+
+    Check the latest visa requirements before travel.
+
+    ### Money
+
+    Vietnam is largely a cash economy.
+
+    ### Getting Around
+
+    Grab works well in major cities.`
   },
   {
     id: 3,
@@ -312,28 +308,30 @@ const blogs = [
     time: "12 min read",
     age: "Ages 6+",
     content:`
-    If your family craves more than beach chairs and buffets, Costa Rica is your playground. This 7-day adventure itinerary packs in zip-lining through cloud forest canopies, white-water rafting on Class III rapids, howler monkey spotting at dawn, and swimming under hidden waterfalls — all manageable for families with kids aged 5 and up.
+    Vietnam is extraordinary — three distinct regions, each feeling like a different country. The chaotic energy of Hanoi, the jaw-dropping karst limestone of Ha Long Bay, the ancient lantern-lit lanes of Hoi An, and the beaches of Da Nang all exist on a single north-to-south route that works perfectly as a one-way family adventure.
+    #
 
-    Quick overview
-    Route: San José (1 night) → Arenal (2 nights) → Monteverde (2 nights) → Manuel Antonio (2 nights)
-    Best time: December–April (dry season). Late July for green season deals
-    Budget: $280–$450/day for a family of 4 (mid-range)
-    Fitness level: Moderate — kids should be comfortable walking 3–5 miles
-    Day 1 — San José: arrival & first impressions
+    This is not a "kid-friendly resort" trip. It's a real immersion — street food, motorbike crossings, boat caves, and cooking classes — calibrated so children are participants in the adventure, not spectators.
+    ## Quick overview
+    - #### **Route :** Hanoi (3 nights) → Ha Long Bay cruise (2 nights) → Hue (2 nights) → Hoi An (3 nights) → Da Nang (2 nights)
+    - #### **Best age :** 6 and up for the full route. Under 6, shorten to Hanoi + Ha Long Bay + Hoi An
+    - #### **Best time :** February–April. October–December also good for central Vietnam. Avoid August in Hue and Hoi An — typhoon season    Fitness level: Moderate — kids should be comfortable walking 3–5 miles
+    - #### **Budget :** $120–$200/day for a family of 4. Vietnam is the best value destination in Southeast Asia
+    ### **Day 1 — San José: arrival & first impressions**
     Fly into Juan Santamaría International Airport. Head straight to Barrio Amón, San José's most walkable historic district — colorful Victorian mansions and street murals. Lunch at Restaurante Nuestra Tierra on Avenida 2 for your first casado (rice, beans, plantains, protein). Under $12/plate.
 
     Afternoon: Museo de los Niños (Children's Museum) in a converted prison — allow 2 hours. Then walk the Mercado Central for fresh fruit and churros. Dinner at Alma de Café inside the Teatro Nacional — stunning colonial architecture, excellent coffee-marinated chicken. Book ahead.
 
     Insider tip: Exchange money at any BAC Credomatic bank branch near the airport — better rates than airport kiosks. Get about $200 in colones for small purchases and tips throughout the trip.
-    Day 2–3 — Arenal: volcano, hot springs & white water
-    Day 2: Shuttle & Ecoglide zip-line
+    ### **Day 2–3 — Arenal: volcano, hot springs & white water**
+    ### **Day 2:** Shuttle & Ecoglide zip-line
     Rent a shuttle from your San José hotel — never drive this route with kids in a rental. Journey to La Fortuna takes about 3 hours. Stop at Sarchi, Costa Rica's craft capital, for 20 minutes. Check in by noon.
 
     2pm: Ecoglide Arenal zip-line — 11 platforms across forest canopy, minimum age 6. The final Superman cable runs 600 meters parallel to Arenal Volcano on a clear day. Allow 3 hours including transport.
 
     Evening: Baldi Hot Springs — 25 pools from 86°F to 104°F, a water slide for kids, and a swim-up bar for parents. Book the sunset entry slot (4–8pm). $42/adult, $28/child.
 
-    Day 3: Río Balsa white-water rafting
+    ### **Day 3:** Río Balsa white-water rafting
     Half-day Class II–III white-water rafting on Río Balsa — minimum age 6, ideal for first-timers. Desafío Adventure Company departs 8am, returns by noon. $85/person including lunch. Afternoon: Mistico Arenal Hanging Bridges — 16 bridges through primary rainforest. Go between 3–5pm when monkeys are most active.
 
     Insider tip: Spot the poison dart frogs at the base of Mistico — tiny, brilliant blue, and completely harmless to observe. Download the iNaturalist app before your trip for real-time species ID.
@@ -341,31 +339,31 @@ const blogs = [
     Built around your kids' ages, budget, and food restrictions. Free 2-day preview — takes 2 minutes.
 
     Build my free itinerary ↗
-    Day 4–5 — Monteverde: cloud forest & canopy
+    ## Day 4–5 — Monteverde: cloud forest & canopy
     Getting there: the jeep-boat-jeep
     The famous jeep-boat-jeep transfer from Arenal to Monteverde costs about $35/person and takes 3 hours — far more fun than the 5-hour mountain road. Kids love the Lake Arenal boat crossing.
 
-    Day 4: Cloud forest & coffee tour
+    ### **Day 4:** Cloud forest & coffee tour
     Morning: Monteverde Cloud Forest Biological Reserve — book guided tours at 7:30am when quetzals are most active (January–May for nesting season). 2-hour guided tour, $30/adult, $15/child under 12.
 
     Afternoon: Café de Monteverde coffee tour — 90 minutes walking organic coffee terraces. Kids get hot chocolate made from estate cacao. Free for under-8s.
 
-    Day 5: Adrenaline day
+    ### **Day 5:** Adrenaline day
     100% Aventura canopy — the longest zip-line in Latin America at 1.6km, plus the Tarzan swing (45-foot free fall into jungle). Not for the faint of heart, but kids 8+ love it. Full morning: $120/adult, $80/child.
 
     Evening: Night walk with Selvatura Park — 1.5 hours in cloud forest darkness finding sleeping birds, stick insects, and kinkajous with guide-held spotlights. The most memorable 90 minutes in Costa Rica. $35/person.
 
     Insider tip: Pack a lightweight rain jacket in every bag for Monteverde — the cloud forest creates its own weather. The mist is what makes it magical, but a wet cotton t-shirt at 65°F gets cold fast.
-    Day 6–7 — Manuel Antonio: beach & wildlife
+    ## Day 6–7 — Manuel Antonio: beach & wildlife
     Getting there
     Shared shuttle from Monteverde departs daily at 7:30am, arrives ~2pm. $55/person. Book through Interbus at least 48 hours ahead.
 
-    Day 6: National Park & El Avión dinner
+    ### **Day 6:** National Park & El Avión dinner
     Arrive at Manuel Antonio National Park by 7am — it hits capacity by 10am on weekends. Hire a certified guide at the entrance for $30: they carry a spotting scope and find sloths, Jesus Christ lizards, and capuchins in trees you'd never look at twice. Beach time from noon at Playa Biesanz — gentle water, no riptide, shaded by palm trees.
 
     Dinner: El Avión restaurant is built around a genuine 1954 Fairchild C-123 cargo plane used in the Iran-Contra affair. Excellent ceviche, family-friendly tables inside the fuselage. Reserve ahead.
 
-    Day 7: Sea kayaking & departure
+    ### **Day 7:** Sea kayaking & departure
     Morning sea kayaking with Planet Dolphin — 2-hour paddle around the marine park's rocky outcroppings with dolphins, sea turtles, and frigate birds. Departs 8am. $65/person, minimum age 5. Afternoon: transfer back to San José for your evening flight.
 
     Budget breakdown — family of 4, 7 days`
@@ -382,58 +380,118 @@ const blogs = [
     content:`
     If your family craves more than beach chairs and buffets, Costa Rica is your playground. This 7-day adventure itinerary packs in zip-lining through cloud forest canopies, white-water rafting on Class III rapids, howler monkey spotting at dawn, and swimming under hidden waterfalls — all manageable for families with kids aged 5 and up.
 
-    Quick overview
-    Route: San José (1 night) → Arenal (2 nights) → Monteverde (2 nights) → Manuel Antonio (2 nights)
-    Best time: December–April (dry season). Late July for green season deals
-    Budget: $280–$450/day for a family of 4 (mid-range)
-    Fitness level: Moderate — kids should be comfortable walking 3–5 miles
-    Day 1 — San José: arrival & first impressions
+    ## Quick overview
+    - #### **Route :** San José (1 night) → Arenal (2 nights) → Monteverde (2 nights) → Manuel Antonio (2 nights)
+    - #### **Best time :** December–April (dry season). Late July for green season deals
+    - #### **Budget :** $280–$450/day for a family of 4 (mid-range)
+    - #### **Fitness level :** Moderate — kids should be comfortable walking 3–5 miles
+    ### **Day 1 — San José: arrival & first impressions**
     Fly into Juan Santamaría International Airport. Head straight to Barrio Amón, San José's most walkable historic district — colorful Victorian mansions and street murals. Lunch at Restaurante Nuestra Tierra on Avenida 2 for your first casado (rice, beans, plantains, protein). Under $12/plate.
 
     Afternoon: Museo de los Niños (Children's Museum) in a converted prison — allow 2 hours. Then walk the Mercado Central for fresh fruit and churros. Dinner at Alma de Café inside the Teatro Nacional — stunning colonial architecture, excellent coffee-marinated chicken. Book ahead.
+    #
+    #
+    ###### **Insider tip :** Exchange money at any BAC Credomatic bank branch near the airport — better rates than airport kiosks. Get about $200 in colones for small purchases and tips throughout the trip.
+    #
+    #
+    ### **Day 2–3 — Arenal: volcano, hot springs & white water** 
+    ##### Day 2: Shuttle & Ecoglide zip-line 
 
-    Insider tip: Exchange money at any BAC Credomatic bank branch near the airport — better rates than airport kiosks. Get about $200 in colones for small purchases and tips throughout the trip.
-    Day 2–3 — Arenal: volcano, hot springs & white water
-    Day 2: Shuttle & Ecoglide zip-line
+    ###
+
     Rent a shuttle from your San José hotel — never drive this route with kids in a rental. Journey to La Fortuna takes about 3 hours. Stop at Sarchi, Costa Rica's craft capital, for 20 minutes. Check in by noon.
+
+    ###
 
     2pm: Ecoglide Arenal zip-line — 11 platforms across forest canopy, minimum age 6. The final Superman cable runs 600 meters parallel to Arenal Volcano on a clear day. Allow 3 hours including transport.
 
+    ###
+
     Evening: Baldi Hot Springs — 25 pools from 86°F to 104°F, a water slide for kids, and a swim-up bar for parents. Book the sunset entry slot (4–8pm). $42/adult, $28/child.
 
-    Day 3: Río Balsa white-water rafting
+    ##### Day 3: Río Balsa white-water rafting
+
+    ###
+
     Half-day Class II–III white-water rafting on Río Balsa — minimum age 6, ideal for first-timers. Desafío Adventure Company departs 8am, returns by noon. $85/person including lunch. Afternoon: Mistico Arenal Hanging Bridges — 16 bridges through primary rainforest. Go between 3–5pm when monkeys are most active.
 
-    Insider tip: Spot the poison dart frogs at the base of Mistico — tiny, brilliant blue, and completely harmless to observe. Download the iNaturalist app before your trip for real-time species ID.
+    ###
+
+    ######  Insider tip: Spot the poison dart frogs at the base of Mistico — tiny, brilliant blue, and completely harmless to observe. Download the iNaturalist app before your trip for real-time species ID.
+
+    ###
+
     Want a custom Costa Rica itinerary for your family?
     Built around your kids' ages, budget, and food restrictions. Free 2-day preview — takes 2 minutes.
 
-    Build my free itinerary ↗
-    Day 4–5 — Monteverde: cloud forest & canopy
-    Getting there: the jeep-boat-jeep
-    The famous jeep-boat-jeep transfer from Arenal to Monteverde costs about $35/person and takes 3 hours — far more fun than the 5-hour mountain road. Kids love the Lake Arenal boat crossing.
+    ###
 
-    Day 4: Cloud forest & coffee tour
+    ##### Build my free itinerary ↗
+
+    ###
+
+    ### **Day 4–5 — Monteverde: cloud forest & canopy**
+
+    ##
+
+    ##### Getting there: the jeep-boat-jeep
+    
+    ####
+
+    The famous jeep-boat-jeep transfer from Arenal to Monteverde costs about $35/person and takes 3 hours — far more fun than the 5-hour mountain road. Kids love the Lake Arenal boat crossing.
+    
+    ###
+
+    ##### Day 4: Cloud forest & coffee tour
+
+    ####
+
     Morning: Monteverde Cloud Forest Biological Reserve — book guided tours at 7:30am when quetzals are most active (January–May for nesting season). 2-hour guided tour, $30/adult, $15/child under 12.
+    
+    ###
 
     Afternoon: Café de Monteverde coffee tour — 90 minutes walking organic coffee terraces. Kids get hot chocolate made from estate cacao. Free for under-8s.
 
-    Day 5: Adrenaline day
+    ###
+
+    ##### Day 5: Adrenaline day
+    
+    ####
+
     100% Aventura canopy — the longest zip-line in Latin America at 1.6km, plus the Tarzan swing (45-foot free fall into jungle). Not for the faint of heart, but kids 8+ love it. Full morning: $120/adult, $80/child.
+    
+    ###
 
     Evening: Night walk with Selvatura Park — 1.5 hours in cloud forest darkness finding sleeping birds, stick insects, and kinkajous with guide-held spotlights. The most memorable 90 minutes in Costa Rica. $35/person.
+    
+    ###
 
-    Insider tip: Pack a lightweight rain jacket in every bag for Monteverde — the cloud forest creates its own weather. The mist is what makes it magical, but a wet cotton t-shirt at 65°F gets cold fast.
-    Day 6–7 — Manuel Antonio: beach & wildlife
-    Getting there
+    ###### Insider tip: Pack a lightweight rain jacket in every bag for Monteverde — the cloud forest creates its own weather. The mist is what makes it magical, but a wet cotton t-shirt at 65°F gets cold fast.
+
+    ###
+
+    ### **Day 6–7 — Manuel Antonio: beach & wildlife**
+    ##### Getting there
     Shared shuttle from Monteverde departs daily at 7:30am, arrives ~2pm. $55/person. Book through Interbus at least 48 hours ahead.
 
-    Day 6: National Park & El Avión dinner
+    ###
+
+    ##### Day 6: National Park & El Avión dinner
+
+    ####
+
     Arrive at Manuel Antonio National Park by 7am — it hits capacity by 10am on weekends. Hire a certified guide at the entrance for $30: they carry a spotting scope and find sloths, Jesus Christ lizards, and capuchins in trees you'd never look at twice. Beach time from noon at Playa Biesanz — gentle water, no riptide, shaded by palm trees.
+
+    ###
 
     Dinner: El Avión restaurant is built around a genuine 1954 Fairchild C-123 cargo plane used in the Iran-Contra affair. Excellent ceviche, family-friendly tables inside the fuselage. Reserve ahead.
 
-    Day 7: Sea kayaking & departure
+    ###
+
+    ##### Day 7: Sea kayaking & departure
+    
+    ####
+    
     Morning sea kayaking with Planet Dolphin — 2-hour paddle around the marine park's rocky outcroppings with dolphins, sea turtles, and frigate birds. Departs 8am. $65/person, minimum age 5. Afternoon: transfer back to San José for your evening flight.`
   },
   {
