@@ -56,7 +56,7 @@ function Page() {
             className="text-white/70 tracking-[0.4em] bg-[#022c22] py-1 px-5 rounded-full flex items-center uppercase text-xs md:text-sm mb-4 font-semibold gap-2"
           >
             <TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400" /> Transparent Plans
-            <TiStarFullOutline className="hidden lg:flextext-2xl text-yellow-400" />
+            <TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400" />
           </motion.span>
           <motion.h1
             initial={{ y: "40vh", opacity: 0 }}
