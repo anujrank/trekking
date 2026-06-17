@@ -8,7 +8,7 @@ import { MdForest } from "react-icons/md";
 import { GiCampingTent } from "react-icons/gi";
 import { GiIsland } from "react-icons/gi";
 import { BsFillSuitcase2Fill } from "react-icons/bs";
-
+import { TiStarFullOutline } from "react-icons/ti";
 function Page() {
   const destinations = [
     {
@@ -203,32 +203,32 @@ function Page() {
       {/* =========================================================================
           1. HERO SECTION
           ========================================================================= */}
-      <div className="relative w-full h-screen overflow-hidden bg-[#0d1b2a] flex items-center justify-center">
+      <div className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen overflow-hidden bg-[#0d1b2a] flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-[#3a86c8] via-[#1a3d54] to-[#0d1b2a] z-0" aria-hidden="true" />
         <div className="absolute w-[60vw] h-[60vw] rounded-full bg-white/5 blur-[120px] top-1/4 left-1/2 -translate-x-1/2 z-5 pointer-events-none" />
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 select-none pointer-events-none px-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 select-none pointer-events-none px-4">
           <motion.span
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-white/70 tracking-[0.4em] uppercase text-xs md:text-sm mb-4 font-semibold font-sans"
+            className="text-white tracking-[0.4em] uppercase text-xs md:text-sm mb-4 font-semibold  bg-[#022c22] py-1 px-5 rounded-full flex gap-2 items-center"
           >
-            Unforgettable Journeys
+            <TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400"/>Unforgettable Journeys<TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400"/>
           </motion.span>
           <motion.h1
             initial={{ y: "40vh", opacity: 0 }}
             animate={{ y: "0vh", opacity: 1 }}
             transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="text-[13vw] font-black tracking-tight text-white uppercase font-sans text-center leading-none drop-shadow-2xl"
-            style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.3)" }}
+            className="text-[13vw] font-black tracking-tight text-white uppercase text-center leading-none drop-shadow-2xl"
+            // style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.3)" }}
           >
             DISCOVER
           </motion.h1>
         </div>
 
         <div
-          className="absolute inset-x-0 bottom-0 h-[65vh] bg-cover bg-bottom z-20 pointer-events-none mix-blend-lighten"
+          className="absolute inset-x-0 bottom-0 h-full bg-cover bg-bottom z-10 pointer-events-none mix-blend-lighten"
           style={{ backgroundImage: "url('/destination.png')" }}
         />
         <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-[#f4f6f9] to-transparent z-25" />

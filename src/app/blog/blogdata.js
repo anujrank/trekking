@@ -9,8 +9,6 @@ const blogs = [
     time: "14 min read",
     age: "Ages All ages",
     content: `
-    # Southeast Asia with Kids: The Complete Family Guide
-
     Southeast Asia is the most diverse travel region on Earth — ten countries within a four-hour flight of each other, each with its own language, food culture, architecture, and adventure offering.
 
     For active families, it's an embarrassment of riches. The question isn't whether to go. It's where to start, how to sequence the countries, and which specific experiences are worth the logistical effort with children in tow.

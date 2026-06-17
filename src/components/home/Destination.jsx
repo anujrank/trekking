@@ -1,4 +1,6 @@
+import { link } from "framer-motion/client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { HiOutlineClock, HiOutlineUserGroup, HiOutlineArrowUpRight } from "react-icons/hi2";
 
 function Destination() {
@@ -139,6 +141,7 @@ function Destination() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredDestinations.map((dest) => (
+            <Link href="/destination" >
             <div
               key={dest.id}
               className="group bg-white rounded-2xl overflow-hidden border border-emerald-100/60 shadow-sm flex flex-col transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 transform hover:-translate-y-0.5"
@@ -204,6 +207,7 @@ function Destination() {
                 </div>
               </div>
             </div>
+            </Link>            
           ))}
         </div>
       </div>
