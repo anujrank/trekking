@@ -62,10 +62,10 @@ function Header() {
 
           {/* Mint Pill CTA Button */}
           <div className="hidden md:flex items-center">
-            <button className="bg-[#52d1a3] hover:bg-[#42be92] text-[#022c22] font-semibold px-6 py-2.5 rounded-xl text-sm transition-all duration-200 flex items-center space-x-1 shadow-md">
+            <Link href="/planner" className="bg-[#52d1a3] hover:bg-[#42be92] text-[#022c22] font-semibold px-6 py-2.5 rounded-xl text-sm transition-all duration-200 flex items-center space-x-1 shadow-md">
               <span>Plan my trip</span>
               <span className="text-xs font-bold">↗</span>
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,31 +91,33 @@ function Header() {
               : "max-h-0 opacity-0 border-t-0 pb-0 pt-0"
           }`}
         >
-          <nav className="flex flex-col space-y-2">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href;
-              return (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 block ${
-                    isActive
-                      ? "text-white bg-emerald-900/50"
-                      : "text-emerald-100/80 hover:text-white hover:bg-emerald-900/30"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              );
-            })}
-            <div className="px-4 pt-4">
-              <button className="w-full bg-[#52d1a3] hover:bg-[#42be92] text-[#022c22] font-semibold px-6 py-3 rounded-full text-base transition-all duration-200 flex items-center justify-center space-x-1 shadow-md">
-                <span>Plan my trip</span>
-                <span className="text-sm font-bold">↗</span>
-              </button>
-            </div>
-          </nav>
+          <div className="flex flex-col space-y-4">
+            <nav className="flex flex-col space-y-2">
+              {navItems.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-base font-medium py-3 border-b border-emerald-900/50 transition-colors duration-200 ${
+                      isActive ? "text-[#4ade80]" : "text-emerald-100/80"
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
+            </nav>
+            <Link 
+              href="/planner"
+              onClick={() => setIsOpen(false)}
+              className="w-full bg-[#52d1a3] hover:bg-[#42be92] text-[#022c22] font-semibold px-6 py-3 rounded-full text-base transition-all duration-200 flex items-center justify-center space-x-1 shadow-md"
+            >
+              <span>Plan my trip</span>
+              <span className="text-xs font-bold">↗</span>
+            </Link>
+          </div>
         </div>
       </div>
     </header>

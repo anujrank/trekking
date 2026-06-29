@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { FiArrowUpRight, FiCheck } from "react-icons/fi";
+import Link from "next/link";
 import {
   FaUserTie,
   FaChevronRight,
@@ -384,10 +385,10 @@ function Page() {
               </p>
             </div>
             <div className="pt-2">
-              <button className="group flex items-center gap-3 bg-[#0F6E56] hover:bg-[#0b5240] text-white font-bold px-8 py-4 rounded-2xl transition-all duration-300 shadow-xl shadow-[#0F6E56]/20 hover:shadow-2xl hover:shadow-[#0F6E56]/30 hover:-translate-y-0.5 active:translate-y-0 text-base md:text-lg">
+              <Link href="/planner" className="group inline-flex items-center gap-3 bg-[#0F6E56] hover:bg-[#0b5240] text-white font-bold px-8 py-4 rounded-2xl transition-all duration-300 shadow-xl shadow-[#0F6E56]/20 hover:shadow-2xl hover:shadow-[#0F6E56]/30 hover:-translate-y-0.5 active:translate-y-0 text-base md:text-lg">
                 Start your free itinerary
                 <FiArrowUpRight className="text-xl transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </button>
+              </Link>
             </div>
           </div>
 

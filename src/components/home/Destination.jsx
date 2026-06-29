@@ -1,4 +1,3 @@
-import { link } from "framer-motion/client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { HiOutlineClock, HiOutlineUserGroup, HiOutlineArrowUpRight } from "react-icons/hi2";
@@ -141,9 +140,8 @@ function Destination() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredDestinations.map((dest) => (
-            <Link href="/destination" >
+            <Link key={dest.id} href="/destination" >
             <div
-              key={dest.id}
               className="group bg-white rounded-2xl overflow-hidden border border-emerald-100/60 shadow-sm flex flex-col transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 transform hover:-translate-y-0.5"
             >
               {/* Colored Banner section WITH background images */}
@@ -211,10 +209,11 @@ function Destination() {
           ))}
         </div>
       </div>
-      <div className="mt-12 text-center">
-        <button className="bg-[#0c4a34] cursor-pointer text-white font-bold py-3 px-6 rounded-full hover:bg-[#0e6245] transition-colors">
-          Plan any destination — free preview ↗
-        </button>
+      {/* Bottom CTA Section */}
+      <div className="mt-16 text-center">
+        <Link href="/destination" className="inline-block bg-[#0c4a34] cursor-pointer text-white font-bold py-3 px-8 rounded-full hover:bg-[#0e6245] transition-all duration-200 shadow-md hover:shadow-lg active:scale-95">
+          Explore all 62 destinations
+        </Link>
       </div>
     </div>
   );

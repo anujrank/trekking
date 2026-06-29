@@ -120,7 +120,10 @@ function Page() {
               Send a Message
             </h2>
 
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6" onSubmit={(e) => {
+              e.preventDefault();
+              alert('Message sent successfully!');
+            }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="name" className="text-xs font-semibold uppercase tracking-wider text-slate-400">Your Name</label>

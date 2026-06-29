@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { HiSparkles, HiArrowUpRight } from 'react-icons/hi2';
 import { FaCalendarDay, FaCreditCard, FaShieldHeart } from 'react-icons/fa6';
 
@@ -39,13 +40,13 @@ function HeroSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-emerald-400 hover:bg-emerald-300 text-emerald-950 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200 shadow-lg flex items-center space-x-1.5 group">
+              <Link href="/planner" className="bg-emerald-400 hover:bg-emerald-300 text-emerald-950 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200 shadow-lg flex items-center space-x-1.5 group">
                 <span>Build my free itinerary</span>
                 <HiArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 border border-white/10 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200">
+              </Link>
+              <Link href="/pricing" className="bg-white/10 hover:bg-white/20 border border-white/10 font-semibold px-6 py-3.5 rounded-full text-base transition-all duration-200">
                 View packages
-              </button>
+              </Link>
             </div>
           </div>
 

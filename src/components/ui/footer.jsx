@@ -1,6 +1,6 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import Link from "next/link";
 // Make sure to import Lucide icons or use SVGs for social media if needed,
 // but standard font/layout styling is handled below.
 
@@ -19,10 +19,10 @@ function Footer() {
             loves. We handle the rest.
           </p>
 
-          <button className="bg-[#5CDBB5] text-[#043324] font-medium py-3 px-8 rounded-full flex items-center gap-2 hover:bg-[#49c29e] transition-all my-2 text-sm md:text-base cursor-pointer">
+          <Link href="/planner" className="bg-[#5CDBB5] text-[#043324] font-medium py-3 px-8 rounded-full flex items-center gap-2 hover:bg-[#49c29e] transition-all my-2 text-sm md:text-base cursor-pointer">
             Build my free itinerary
             <span className="text-xs">↗</span>
-          </button>
+          </Link>
 
           <p className="text-xs md:text-sm text-white font-bold">
             No credit card · Free Day 1–2 preview · Full plan from $349
@@ -63,21 +63,21 @@ function Footer() {
           <h4 className="text-[11px] font-bold tracking-widest text-[#5CDBB5] uppercase mb-1">
             Destinations
           </h4>
-          <a href="#" className="hover:text-white transition-colors">
+          <Link href="/destination" className="hover:text-white transition-colors">
             Southeast Asia
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          </Link>
+          <Link href="/destination" className="hover:text-white transition-colors">
             Central America
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          </Link>
+          <Link href="/destination" className="hover:text-white transition-colors">
             Africa & Safari
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          </Link>
+          <Link href="/destination" className="hover:text-white transition-colors">
             Europe
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          </Link>
+          <Link href="/destination" className="hover:text-white transition-colors">
             All 62 destinations
-          </a>
+          </Link>
         </div>
 
         {/* Plan Your Trip Column */}
@@ -85,18 +85,18 @@ function Footer() {
           <h4 className="text-[11px] font-bold tracking-widest text-[#5CDBB5] uppercase mb-1">
             Plan Your Trip
           </h4>
-          <a href="#" className="hover:text-white transition-colors">
+          <Link href="/planner" className="hover:text-white transition-colors">
             Free planner tool
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          </Link>
+          <Link href="/pricing" className="hover:text-white transition-colors">
             Pricing & packages
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          </Link>
+          <Link href="/process" className="hover:text-white transition-colors">
             How it works
-          </a>
-          <a href="#" className="hover:text-white transition-colors">
+          </Link>
+          <Link href="/about" className="hover:text-white transition-colors">
             About
-          </a>
+          </Link>
         </div>
 
         {/* Blog Column */}
@@ -126,13 +126,13 @@ function Footer() {
       <div className="border-t border-white/20 py-6 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#8FD8BF] opacity-80">
           <div>© 2026 Adventure Travel Co. All rights reserved.</div>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">
-              Privacy policy
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Terms of service
-            </a>
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-[#8FD8BF] font-medium">
+            <Link href="/terms" className="hover:text-white transition-colors">
+              Terms
+            </Link>
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy
+            </Link>
           </div>
         </div>
       </div>

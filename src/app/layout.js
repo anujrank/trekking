@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Treking Adventures - Explore the Himalayas",
   description: "Discover unforgettable trekking experiences across the majestic Himalayas. Join us for expertly guided treks, stunning landscapes, and unforgettable adventures in the mountains. Your journey to the Himalayas starts here.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -24,8 +27,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <Header />
-      <body className="min-h-full flex flex-col">{children}<Footer /></body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -56,7 +56,10 @@ function FAQ() {
               />
               <HiOutlineEnvelope className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             </div>
-            <button className="w-full sm:w-auto bg-[#0D6246] hover:bg-[#08422F] text-white font-semibold text-sm px-7 py-3 rounded-full transition-all shadow-md hover:shadow-lg active:scale-95 duration-150 whitespace-nowrap">
+            <button 
+              onClick={() => alert('Thanks for subscribing!')}
+              className="w-full sm:w-auto bg-[#0D6246] hover:bg-[#08422F] text-white font-semibold text-sm px-7 py-3 rounded-full transition-all shadow-md hover:shadow-lg active:scale-95 duration-150 whitespace-nowrap cursor-pointer"
+            >
               Send me the guides
             </button>
           </div>

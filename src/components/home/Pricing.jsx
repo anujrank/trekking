@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Pricing() {
   return (
@@ -51,9 +52,9 @@ function Pricing() {
             </ul>
           </div>
           
-          <button className='w-full border border-[#0e6245] cursor-pointer text-[#0e6245] font-semibold py-3 px-4 rounded-full hover:bg-emerald-50 transition-colors flex items-center justify-center gap-1 mt-4 text-sm'>
+          <Link href="/planner" className='w-full border border-[#0e6245] cursor-pointer text-[#0e6245] font-semibold py-3 px-4 rounded-full hover:bg-emerald-50 transition-colors flex items-center justify-center gap-1 mt-4 text-sm'>
             Start free <span className='text-xs'>↗</span>
-          </button>
+          </Link>
         </div>
 
         {/* Card 2: Adventurer */}
@@ -117,9 +118,9 @@ function Pricing() {
             </ul>
           </div>
           
-          <button className='w-full bg-[#0e6245] cursor-pointer text-white font-semibold py-3 px-4 rounded-full hover:bg-[#0b4d36] transition-colors flex items-center justify-center gap-1 mt-4 text-sm shadow-md'>
-            Get full itinerary <span className='text-xs'>↗</span>
-          </button>
+          <Link href="/planner" className='w-full bg-[#0e6245] cursor-pointer text-white font-semibold py-3 px-4 rounded-full hover:bg-[#0b4d36] transition-colors flex items-center justify-center gap-1 mt-4 text-sm shadow-md'>
+            Get started <span className='text-xs'>↗</span>
+          </Link>
         </div>
 
       </div>

@@ -83,9 +83,8 @@ function TravelGuide() {
         {/* Guides Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
           {travelGuide.map((guide) => (
-            <Link href="/blog">
+            <Link key={guide.id} href="/blog">
               <div
-                key={guide.id}
                 className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-emerald-100/60 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 transform hover:-translate-y-0.5"
               >
                 {/* 1. Image Wrapper Container */}

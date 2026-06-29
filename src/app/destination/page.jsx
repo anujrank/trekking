@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useMemo } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Process from "@/components/home/Process";
 import { MdScubaDiving } from "react-icons/md";
