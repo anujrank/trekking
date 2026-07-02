@@ -19,8 +19,6 @@ const blogs = [
 
     ### 1. Thailand — Best Overall First-Timer Destination
 
-    ![thailand](/blogimg/thailandblog.png)
-
     **Best for:** First-time Southeast Asia families, food-focused families, ages 5+.
 
     No destination delivers more variety per square mile. Bangkok's urban intensity, Chiang Mai's jungle adventures, and the southern islands are three completely different experiences accessible on a single 10-day itinerary.
@@ -39,7 +37,6 @@ const blogs = [
 
     ### 2. Vietnam — Best for Cultural Depth and Variety
 
-    ![vietnam](/blogimg/vietnamblog.png)
 
     **Best for:** Culturally curious families, foodie families, teens who engage with history.
 
@@ -59,7 +56,6 @@ const blogs = [
 
     ### 3. Cambodia — Best for History and Wildlife
 
-    ![cambodia](/blogimg/cambodiablog.png)
 
     **Best for:** History-focused families, ages 8+, families wanting something genuinely different.
 
@@ -79,7 +75,6 @@ const blogs = [
 
     ### 4. Bali, Indonesia — Best for Families Wanting Balance
 
-    ![bali](/blogimg/baliblog.png)
 
     **Best for:** Mixed-age family groups, surf families, families wanting villa-style accommodation.
 
@@ -99,7 +94,6 @@ const blogs = [
 
     ### 5. Laos — Best for Escaping the Crowds
 
-    ![laos](/blogimg/laosblog.png)
 
     **Best for:** Adventurous families, teens, and repeat Southeast Asia travelers.
 
@@ -117,7 +111,6 @@ const blogs = [
 
     ### 6. Borneo, Malaysia — Best for Wildlife Families
 
-    ![borneo](/blogimg/borneoblog.png)
 
     **Best for:** Wildlife lovers, ages 6+, nature-focused families.
 
@@ -296,7 +289,7 @@ const blogs = [
 
     ### Getting Around
 
-    Grab works well in major cities.`
+    Grab works well in major cities.`,
   },
   {
     id: 3,
@@ -307,7 +300,7 @@ const blogs = [
     dis: "Ha Long Bay overnight cruise, ancient Hoi An lanterns, and the world's best street food at every price point.",
     time: "12 min read",
     age: "Ages 6+",
-    content:`
+    content: `
     Vietnam is extraordinary — three distinct regions, each feeling like a different country. The chaotic energy of Hanoi, the jaw-dropping karst limestone of Ha Long Bay, the ancient lantern-lit lanes of Hoi An, and the beaches of Da Nang all exist on a single north-to-south route that works perfectly as a one-way family adventure.
     #
 
@@ -366,7 +359,7 @@ const blogs = [
     ### **Day 7:** Sea kayaking & departure
     Morning sea kayaking with Planet Dolphin — 2-hour paddle around the marine park's rocky outcroppings with dolphins, sea turtles, and frigate birds. Departs 8am. $65/person, minimum age 5. Afternoon: transfer back to San José for your evening flight.
 
-    Budget breakdown — family of 4, 7 days`
+    Budget breakdown — family of 4, 7 days`,
   },
   {
     id: 4,
@@ -377,7 +370,7 @@ const blogs = [
     dis: "Volcano zip-lines, white-water rafting, cloud forest wildlife, and Manuel Antonio beaches — the gold standard first family adventure.",
     time: "10 min read",
     age: "Ages 5+",
-    content:`
+    content: `
     If your family craves more than beach chairs and buffets, Costa Rica is your playground. This 7-day adventure itinerary packs in zip-lining through cloud forest canopies, white-water rafting on Class III rapids, howler monkey spotting at dawn, and swimming under hidden waterfalls — all manageable for families with kids aged 5 and up.
 
     ## Quick overview
@@ -492,7 +485,7 @@ const blogs = [
     
     ####
     
-    Morning sea kayaking with Planet Dolphin — 2-hour paddle around the marine park's rocky outcroppings with dolphins, sea turtles, and frigate birds. Departs 8am. $65/person, minimum age 5. Afternoon: transfer back to San José for your evening flight.`
+    Morning sea kayaking with Planet Dolphin — 2-hour paddle around the marine park's rocky outcroppings with dolphins, sea turtles, and frigate birds. Departs 8am. $65/person, minimum age 5. Afternoon: transfer back to San José for your evening flight.`,
   },
   {
     id: 5,
@@ -503,82 +496,118 @@ const blogs = [
     dis: "Glacier hikes, ice caves, geysers, and geothermal swimming pools — the most dramatic family road trip on Earth.",
     time: "11 min read",
     age: "Ages 6+",
-    content:`
+    content: `
     Iceland isn't just Europe's most dramatic landscape — it's one of the most family-friendly adventure destinations on Earth. No poisonous snakes, no dangerous wildlife, almost no crime, and a road system that puts your kids' faces against a window of waterfalls, geysers, lava fields, and black sand beaches for a full week.
 
-    Why Iceland works brilliantly for active families
-    Everything is outdoors, spread out, and self-paced — no crowds crushing through museum queues
-    Kids aged 4+ can join most glacier hikes and horseback rides with certified guides
-    The Ring Road (Route 1) is smooth, well-signed, and manageable in a 4WD rental
-    Summer: 24 hours of daylight means flexible scheduling and late bedtimes without guilt
-    Winter (Nov–Mar): Northern lights from your hotel hot tub, snowmobiling, and ice caves
-    Day 1 — Reykjavík: arrival & Laugardalslaug
+    ### **Why Iceland works brilliantly for active families**
+    - Everything is outdoors, spread out, and self-paced — no crowds crushing through museum queues
+    - Kids aged 4+ can join most glacier hikes and horseback rides with certified guides
+    - The Ring Road (Route 1) is smooth, well-signed, and manageable in a 4WD rental
+    
+    - **Summer :** 24 hours of daylight means flexible scheduling and late bedtimes without guilt
+    - **Winter (Nov–Mar) :** Northern lights from your hotel hot tub, snowmobiling, and ice caves
+
+    ### **Day 1 — Reykjavík: arrival & Laugardalslaug**
+
     Fly into Keflavík International Airport. Pick up your 4WD rental at the airport (essential for F-roads and winter conditions — book a Dacia Duster or Toyota RAV4 minimum). The drive to Reykjavík is 45 minutes.
 
     Check into Hotel Klettur or Fosshotel Reykjavik (both accommodate families with connecting rooms and include breakfast). First afternoon: Laugardalslaug — Reykjavík's geothermal swimming complex with a 50m outdoor pool, hot pots, a water slide, and a steam room. This is how locals actually spend afternoons. Entry is $8/adult, $4/child. Do not skip this on Day 1; it calibrates the whole trip.
 
-    Insider tip: Download the 112 Iceland app immediately upon arrival. It's the national safety app — share your hiking plans and emergency contacts. Every outdoor guide in Iceland will ask if you have it.
-    Day 2 — Golden Circle: geysers, waterfalls & geothermal bakery
+    ###### Insider tip: Download the 112 Iceland app immediately upon arrival. It's the national safety app — share your hiking plans and emergency contacts. Every outdoor guide in Iceland will ask if you have it.
+
+    ### **Day 2 — Golden Circle: geysers, waterfalls & geothermal bakery**
+
     Arrive at Þingvellir National Park by 9am before tour buses. Walk the Almannagjá fault rift — the visible seam between the North American and Eurasian tectonic plates. Children grasp this viscerally in a way no classroom achieves. Allow 90 minutes.
+    
+    ###
 
     Lunch at Friðheimar Greenhouse — everything on the menu is made from tomatoes grown 10 feet from your table. The tomato soup is legendary. Book weeks ahead in peak summer.
 
+    ###
+
     Afternoon: Geysir — Strokkur erupts every 5–7 minutes to 30 meters. Station your kids downwind with cameras. Then Gullfoss ('Golden Falls') — a two-tiered waterfall dropping 32 meters into a canyon. Walk the lower path all the way to the railing for full spray immersion. Bring full waterproofs.
+    
+    ###
 
-    Insider tip: The Geysir area has a geothermal bakery that buries rye bread loaves in the ground next to a hot spring to bake overnight. Buy a slice with Icelandic butter. It tastes like nothing else.
-    Want a custom Iceland itinerary for your family?
-    Built around your kids' ages, budget, and food restrictions. Free 2-day preview — takes 2 minutes.
+    ###### Insider tip: The Geysir area has a geothermal bakery that buries rye bread loaves in the ground next to a hot spring to bake overnight. Buy a slice with Icelandic butter. It tastes like nothing else.
 
-    Build my free itinerary ↗
-    Day 3 — South Coast: black sand, waterfalls & a plane wreck
+    ###
+
+    ###### Want a custom Iceland itinerary for your family? 
+    ###### Built around your kids' ages, budget, and food restrictions. Free 2-day preview — takes 2 minutes. 
+    
+    ###
+
+    ##### Build my free itinerary ↗
+
+    ###
+
+    ### **Day 3 — South Coast: black sand, waterfalls & a plane wreck**
     Seljalandsfoss: Walk behind the waterfall — a curtain of water with the ocean behind you. Kids remember this for years. Wet gear essential. 30 minutes.
+
+    ###
 
     Skógafoss: More powerful, more thunderous. Climb the 527 steps to the top for the view down the entire south coast. Puffins nest in the cliffs here May–August.
 
+    ###
+
     DC-3 Plane Wreck: A 1973 US Navy plane sits on Sólheimasandur black sand beach. The 4km round-trip walk across black sand is flat and achievable for kids aged 6+. Park at the official lot on Route 1.
+
+    ###
 
     Overnight in Vík at Icelandair Hotel Vík. Dinner at Sudur-Vík restaurant for fish and chips overlooking the black beach.
 
-    Day 4 — Glacier hiking & ice caves (Vatnajökull)
+    ###
+
+    ### **Day 4 — Glacier hiking & ice caves (Vatnajökull)**
     Today is the adventure centerpiece. Vatnajökull is Europe's largest glacier — 3,100 square miles of ancient ice.
+
+    ###
 
     Glacier hike: Book with Icelandic Mountain Guides (Skaftafell base) for the Family Glacier Walk — 3 hours on Falljökull glacier, crampons provided, minimum age 8, no experience needed. $89/adult, $65/child. The blues inside crevasses are unlike anything else on Earth.
 
+    ###
+
     Ice cave (October–March only): Crystal Ice Cave tours depart from Jökulsárlón glacier lagoon — 2-hour guided entry into a cave carved by meltwater beneath the glacier. Book months in advance for winter travel.
+
+    ###
 
     Jökulsárlón Glacier Lagoon: Watch icebergs calving off the glacier and drifting to sea. Boat tours run $60/adult in summer. Diamond Beach next door has icebergs washed up on black sand.
 
-    Insider tip: Glacier hiking and ice caves book out 3–6 months in advance for summer. If you're planning a family trip, secure these first before touching any other booking.
-    Day 5–6 — East Fjords & highland waterfall trekking
+    ###
+
+    ###### Insider tip: Glacier hiking and ice caves book out 3–6 months in advance for summer. If you're planning a family trip, secure these first before touching any other booking.
+
+    ###
+
+    ### **Day 5–6 — East Fjords & highland waterfall trekking**
     The East Fjords are Iceland's quietest region — steep mountains plunging into narrow fjords, reindeer wandering roadside, and almost no tourist infrastructure. It's also some of the country's best hiking.
+
+    ###
 
     Stórurð (Day 5): The 'Giant Boulders' hike — 9km round-trip through moss-covered lava fields to a turquoise lake surrounded by house-sized boulders. Medium difficulty, 4–5 hours. Suitable for kids 8+.
 
+    ###
+
     Seyðisfjörður (Day 6): Iceland's most photogenic village — multicolored wooden houses and a rainbow road leading to a Norwegian-style church. Eat at Nordic Restaurant for the best fish soup outside Reykjavík.
 
-    Day 7 — Lake Mývatn: volcanic craters & natural jacuzzi
+    ###
+
+    ### **Day 7 — Lake Mývatn: volcanic craters & natural jacuzzi**
     Grjótagjá cave: Geothermally heated lava cave with turquoise water — now too hot to swim (50°C) but stunning to see
     Hverfjall crater: 45-minute rim walk around a 1km-wide tuff crater from 2,500 years ago
     Mývatn Nature Baths: Iceland's answer to the Blue Lagoon but quieter, cheaper ($45/adult vs $100), and arguably more beautiful
     Dimmuborgir lava formations: 'Dark Castles' — a field of bizarre lava pillars kids can run through
     Drive back to Reykjavík for your evening or next-morning departure flight from Keflavík.
 
-    Budget breakdown — family of 4, 7 days
-    Category	Budget range
-    Rental car (7 days, 4WD)	$800–$1,200
-    Accommodation (7 nights)	$1,400–$2,400
-    Activities (all listed above)	$800–$1,100
-    Food (mix of grocery and restaurants)	$700–$1,000
-    Total (international flights not included)	$3,700–$5,700
-    Practical Iceland guide
-    Summer vs winter
-    Summer (June–August) gives you 24-hour daylight and access to all hiking trails and the highland interior. Winter (November–March) gives you Northern Lights (no guarantees — it's weather dependent), ice caves, and snowmobiling, but some roads and highland routes are closed. Both seasons are extraordinary for different reasons.
+   #### **Summer vs winter**
+   -  **Summer (June–August)** gives you 24-hour daylight and access to all hiking trails and the highland interior. Winter (November–March) gives you Northern Lights (no guarantees — it's weather dependent), ice caves, and snowmobiling, but some roads and highland routes are closed. Both seasons are extraordinary for different reasons.
 
-    What to pack
+    - **What to pack**
     Waterproof outer layers for every family member — the "changeability" of Icelandic weather is not a cliché. Merino wool base layers for warmth without bulk. Waterproof hiking boots, not trainers. Gloves and hats even in summer at altitude.
 
-    Safety
-    Iceland has an excellent safety record for tourists, but weather can change fast. Never approach cliff edges, stand under waterfalls, or venture onto ice without a guide. The 112 Iceland app (download before you land) lets you register your hiking route so rescue services know where to look if needed.`
+    - **Safety**
+    Iceland has an excellent safety record for tourists, but weather can change fast. Never approach cliff edges, stand under waterfalls, or venture onto ice without a guide. The 112 Iceland app (download before you land) lets you register your hiking route so rescue services know where to look if needed.`,
   },
   {
     id: 6,
@@ -589,98 +618,143 @@ const blogs = [
     dis: "Our honest ranked list of the world's top family adventure destinations — with budgets, best ages, and what to avoid.",
     time: "13 min read",
     age: "Ages All ages",
-    content:`
+    content: `
     After 15 years designing adventure itineraries for families, I've seen which destinations deliver real memories and which ones look great on Instagram but fall flat with an 8-year-old in tow. This list is built from real family feedback, not tourism board brochures. Every destination here has been vetted for kid-appropriate adventure activities, food options picky eaters will actually eat, logistics that don't require a PhD, and a budget range that's achievable.
 
-    1. Costa Rica — the gold standard for family adventure
-    Best for: First-time adventure families, ages 5 and up.
+    ### **1. Costa Rica — the gold standard for family adventure|**
+
+    **Best for :** First-time adventure families, ages 5 and up.
+
+    ###
 
     No destination delivers more adventure per square mile. Zip-lining, white-water rafting, volcano hiking, and wildlife spotting are all within a 3-hour drive of each other. The country runs on eco-tourism and is deeply set up for family visitors.
 
-    Top activities: Arenal zip-lines, Tortuguero turtle nesting (July–Oct), Manuel Antonio sea kayaking
-    Best months: December–April (dry season)
-    Budget: $280–$450/day for a family of 4
-    2. Iceland — Europe's most dramatic family playground
-    Best for: Science-loving families, teenagers, Northern Lights seekers.
+    ###
+
+    - **Top activities :** Arenal zip-lines, Tortuguero turtle nesting (July–Oct), Manuel Antonio sea kayaking
+    - **Best months :** December–April (dry season)
+    - **Budget :** $280–$450/day for a family of 4
+    ### **2. Iceland — Europe's most dramatic family playground**
+
+    - **Best for :** Science-loving families, teenagers, Northern Lights seekers.
+
+    ###
 
     Iceland is astonishingly safe, visually overwhelming, and genuinely educational. Waterfalls, glaciers, geysers, and lava fields are never more than 30 minutes apart on the Ring Road.
 
-    Top activities: Glacier hiking, ice caves, whale watching, geothermal swimming
-    Best months: June–August (daylight), November–March (Northern Lights)
+    - **Top activities :** Glacier hiking, ice caves, whale watching, geothermal swimming
+    - **Best months :** June–August (daylight), November–March (Northern Lights)
     Budget: $400–$600/day for a family of 4
-    3. Patagonia, Chile & Argentina — the ultimate wilderness
-    Best for: Serious hikers, teens, families who've done "starter" trips and want elevation.
+
+    ### **3. Patagonia, Chile & Argentina — the ultimate wilderness**
+
+    - **Best for :** Serious hikers, teens, families who've done "starter" trips and want elevation.
+
+    ###
 
     Torres del Paine in Chile and Los Glaciares in Argentina are among the most spectacular landscapes on Earth. The W Trek can be done in 4–5 days with kids aged 10+ who have hiking experience.
 
-    Top activities: W Trek hiking, Perito Moreno glacier walk, horseback riding
-    Best months: November–March (Southern Hemisphere summer)
-    Budget: $350–$550/day for a family of 4
-    4. Japan — culture-shock adventure for curious families
-    Best for: Families who love food, culture, and want something genuinely different.
+    - **Top activities :** W Trek hiking, Perito Moreno glacier walk, horseback riding
+    - **Best months :** November–March (Southern Hemisphere summer)
+    - **Budget :** $350–$550/day for a family of 4
+
+    ### **4. Japan — culture-shock adventure for curious families**
+
+    - **Best for :** Families who love food, culture, and want something genuinely different.
+
+    ###
 
     Japan surprised many of our clients as an "adventure" destination — but hiking Mount Fuji, cycling the Shimanami Kaido, and navigating Tokyo's neighborhoods with kids is genuinely exhilarating. Japan is impeccably safe and easy to navigate.
 
-    Top activities: Mt. Fuji sunrise hike, Shimanami Kaido cycling, Nara deer park, Osaka street food
-    Best months: March–May (cherry blossom), October–November (fall foliage)
-    Budget: $300–$500/day for a family of 4
-    5. Tanzania & Kenya — Africa's classic family safari
-    Best for: Wildlife-obsessed families, ages 6 and up.
+    - **Top activities :** Mt. Fuji sunrise hike, Shimanami Kaido cycling, Nara deer park, Osaka street food
+    - **Best months :** March–May (cherry blossom), October–November (fall foliage)
+    - **Budget :** $300–$500/day for a family of 4
+
+    ### **5. Tanzania & Kenya — Africa's classic family safari**
+
+    - **Best for :** Wildlife-obsessed families, ages 6 and up.
+
+    ###
 
     The Serengeti wildebeest migration (July–October) is one of the great natural spectacles. A well-planned safari routes families through game drives at the right camps at the right times. Zanzibar's beaches make the perfect recovery week after the dust and drama of the plains.
 
-    Top activities: Serengeti game drives, Ngorongoro Crater, Zanzibar snorkeling
-    Best months: July–October for migration, January–February for calving season
-    Budget: $500–$900/day for a family of 4 (mid-range camps)
-    Want a custom your chosen destination itinerary for your family?
-    Built around your kids' ages, budget, and food restrictions. Free 2-day preview — takes 2 minutes.
+    - **Top activities :** Serengeti game drives, Ngorongoro Crater, Zanzibar snorkeling
+    - **Best months :** July–October for migration, January–February for calving season
+    - **Budget :** $500–$900/day for a family of 4 (mid-range camps)
 
-    Build my free itinerary ↗
-    6. New Zealand — adventure capital of the world, family edition
-    Best for: Outdoorsy families with flexible schedules (long flights are worth it).
+    ###### Want a custom your chosen destination itinerary for your family?
+    ###### Built around your kids' ages, budget, and food restrictions. Free 2-day preview — takes 2 minutes.
+
+    ###
+
+    ##### Build my free itinerary ↗
+
+    ### **6. New Zealand — adventure capital of the world, family edition**
+
+    - **Best for :** Outdoorsy families with flexible schedules (long flights are worth it).
+
+    ###
 
     New Zealand is designed for adventure — bungee jumping, Lord of the Rings landscapes, Milford Sound kayaking, and Hobbiton all exist in a country roughly the size of Colorado. Both islands reward slow travel.
 
-    Top activities: Tongariro Alpine Crossing (teens), Waitomo glowworm caves, Abel Tasman kayaking
-    Best months: November–April (Southern Hemisphere summer)
-    Budget: $350–$550/day for a family of 4
-    7. Peru — ancient history meets Andean adventure
-    Best for: History-loving families, teens, families wanting a physical challenge.
+    - **Top activities :** Tongariro Alpine Crossing (teens), Waitomo glowworm caves, Abel Tasman kayaking
+    - **Best months :** November–April (Southern Hemisphere summer)
+    - **Budget :** $350–$550/day for a family of 4
+
+    ### **7. Peru — ancient history meets Andean adventure**
+
+    ###
+
+    - **Best for :** History-loving families, teens, families wanting a physical challenge.
+
+    ###
 
     Machu Picchu remains one of the world's great family travel experiences. The train-and-bus route from Aguas Calientes is fully achievable with young children, and the Sacred Valley has days of content before you get there.
 
-    Top activities: Machu Picchu, Sacred Valley cycling, Lake Titicaca reed island visits
-    Best months: April–October (dry season)
-    Budget: $200–$350/day for a family of 4
-    Altitude warning: Cusco sits at 3,400m. Fly in 2 days before any strenuous activity, drink mate de coca tea constantly, and book accommodation with oxygen on-call. Kids acclimatize faster than adults but still need time.
-    8. Norway — fjords, Vikings & midnight sun
-    Best for: Families with teens, Scandinavia lovers, kayaking enthusiasts.
+    - **Top activities :** Machu Picchu, Sacred Valley cycling, Lake Titicaca reed island visits
+    - **Best months :** April–October (dry season)
+    - **Budget :** $200–$350/day for a family of 4
+    ###### **Altitude warning :** Cusco sits at 3,400m. Fly in 2 days before any strenuous activity, drink mate de coca tea constantly, and book accommodation with oxygen on-call. Kids acclimatize faster than adults but still need time.
+
+    ### **8. Norway — fjords, Vikings & midnight sun**
+
+    - **Best for :** Families with teens, Scandinavia lovers, kayaking enthusiasts.
+
+    ###
 
     The Norwegian fjords are arguably the most dramatic coastal scenery on Earth. Kayaking on Sognefjord, hiking to Preikestolen (Pulpit Rock), and taking the Flåm Railway are all achievable with active families.
 
-    Top activities: Sognefjord kayaking, Preikestolen hike, Bergen Funicular, dog sledding (winter)
-    Best months: June–August for fjords, December–February for Northern Lights
-    Budget: $450–$650/day for a family of 4
-    9. Colombia — South America's most underrated family destination
-    Best for: Culture-hungry families, families wanting to avoid tourist crowds.
+    - **Top activities :** Sognefjord kayaking, Preikestolen hike, Bergen Funicular, dog sledding (winter)
+    - **Best months :** June–August for fjords, December–February for Northern Lights
+    - **Budget :** $450–$650/day for a family of 4
+
+    ### **9. Colombia — South America's most underrated family destination**
+
+    - **Best for :** Culture-hungry families, families wanting to avoid tourist crowds.
+
+    ###
 
     Colombia has transformed dramatically in the last decade. Medellín's cable car neighborhoods, Cartagena's walled city, and the coffee region haciendas make for a rich family trip that most families haven't done yet — which means no crowds and better prices.
 
-    Top activities: Medellín commune tour, coffee region horseback riding, Cartagena cooking class
-    Best months: December–March, July–August
-    Budget: $180–$280/day for a family of 4
-    10. Morocco — desert, medinas & camels
-    Best for: Culturally curious families, teens, families seeking something completely different.
+    - **Top activities :** Medellín commune tour, coffee region horseback riding, Cartagena cooking class
+    - **Best months :** December–March, July–August
+    - **Budget :** $180–$280/day for a family of 4
+
+    ### **10. Morocco — desert, medinas & camels**
+
+    - **Best for :** Culturally curious families, teens, families seeking something completely different.
+
+    ###
 
     A Marrakech-to-Merzouga desert route takes families through ancient medinas, Atlas Mountain villages, and the Sahara — culminating in a camel trek to a desert camp where kids sleep under the stars in a Berber tent. Few trips generate more stories.
 
-    Top activities: Camel trek to desert camp, Marrakech medina cooking class, Atlas Mountain hiking
-    Best months: October–April (avoid summer heat)
-    Budget: $200–$350/day for a family of 4
+    - **Top activities :** Camel trek to desert camp, Marrakech medina cooking class, Atlas Mountain hiking
+    - **Best months :** October–April (avoid summer heat)
+    - **Budget :** $200–$350/day for a family of 4
     How to choose the right destination for your family
     The right adventure destination depends on four things: your kids' ages and physical capabilities, your family's tolerance for logistical complexity, your budget, and whether you want beach recovery time built in.
 
-    The best way to find out? Use our free planner — it asks the right questions and generates a custom 2-day itinerary preview for any destination on this list and 50 others. No commitment, no credit card.`
+    The best way to find out? Use our free planner — it asks the right questions and generates a custom 2-day itinerary preview for any destination on this list and 50 others. No commitment, no credit card.`,
   },
 ];
 export default blogs;

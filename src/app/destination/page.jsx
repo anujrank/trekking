@@ -10,159 +10,175 @@ import { GiCampingTent } from "react-icons/gi";
 import { GiIsland } from "react-icons/gi";
 import { BsFillSuitcase2Fill } from "react-icons/bs";
 import { TiStarFullOutline } from "react-icons/ti";
+import exploreData from "./exploredata";
 function Page() {
   const destinations = [
-    {
-      id: 1,
-      img: "/thailand.png",
-      name: "Thailand",
-      region: "Southeast Asia",
-      duration: 10,
-      price: "$780",
-      age: "Ages 5+",
-      bgClass: "bg-[#09523c]",
-    },
-    {
-      id: 2,
-      img: "/vietnam.png",
-      name: "Vietnam",
-      region: "Southeast Asia",
-      duration: 12,
-      price: "$860",
-      age: "Ages 6+",
-      bgClass: "bg-[#0c7052]",
-    },
-    {
-      id: 3,
-      img: "/cambodia.png",
-      name: "Cambodia",
-      region: "Southeast Asia",
-      duration: 8,
-      price: "$660",
-      age: "Ages 8+",
-      bgClass: "bg-[#6c4212]",
-    },
-    {
-      id: 4,
-      img: "/costa-rica.png",
-      name: "Costa Rica",
-      region: "Americas",
-      duration: 7,
-      price: "$1,500",
-      age: "Ages 5+",
-      bgClass: "bg-[#1d420b]",
-    },
-    {
-      id: 5,
-      img: "/patagonia.png",
-      name: "Patagonia",
-      region: "Americas",
-      duration: 10,
-      price: "$2,150",
-      age: "Ages 10+",
-      bgClass: "bg-[#0f4682]",
-    },
-    {
-      id: 6,
-      img: "/iceland.png",
-      name: "Iceland",
-      region: "Europe",
-      duration: 7,
-      price: "$1,900",
-      age: "Ages 6+",
-      bgClass: "bg-[#252063]",
-    },
-    {
-      id: 7,
-      img: "/tanzania.png",
-      name: "Tanzania",
-      region: "Africa",
-      duration: 10,
-      price: "$1,700",
-      age: "Ages 6+",
-      bgClass: "bg-[#7c3216]",
-    },
-    {
-      id: 8,
-      img: "/norway.png",
-      name: "Norway",
-      region: "Europe",
-      duration: 8,
-      price: "$1,850",
-      age: "Ages 8+",
-      bgClass: "bg-[#033463]",
-    },
-    {
-      id: 9,
-      img: "/bali.png",
-      name: "Bali",
-      region: "Southeast Asia",
-      duration: 10,
-      price: "$820",
-      age: "Ages 6+",
-      bgClass: "bg-[#424441]",
-    },
-    {
-      id: 10,
-      img: "/nepal.png",
-      name: "Nepal",
-      region: "South Asia",
-      duration: 9,
-      price: "$540",
-      age: "Ages 8+",
-      bgClass: "bg-[#134e4a]",
-    },
-    {
-      id: 11,
-      img: "/switzerland.png",
-      name: "Switzerland",
-      region: "Europe",
-      duration: 8,
-      price: "$2,100",
-      age: "Ages 6+",
-      bgClass: "bg-[#1e3a8a]",
-    },
-    {
-      id: 12,
-      img: "/new-zealand.png",
-      name: "New Zealand",
-      region: "Oceania",
-      duration: 12,
-      price: "$2,500",
-      age: "Ages 8+",
-      bgClass: "bg-[#14532d]",
-    },
-    {
-      id: 13,
-      img: "/peru.png",
-      name: "Peru",
-      region: "South America",
-      duration: 11,
-      price: "$1,650",
-      age: "Ages 10+",
-      bgClass: "bg-[#7f1d1d]",
-    },
-    {
-      id: 14,
-      img: "/bhutan.png",
-      name: "Bhutan",
-      region: "South Asia",
-      duration: 6,
-      price: "$620",
-      age: "Ages 5+",
-      bgClass: "bg-[#854d0e]",
-    },
-    {
-      id: 15,
-      img: "/japan.png",
-      name: "Japan",
-      region: "East Asia",
-      duration: 9,
-      price: "$1,450",
-      age: "Ages 6+",
-      bgClass: "bg-[#4c1d95]",
-    },
-  ];
+  {
+    id: 1,
+    name: "Thailand",
+    slug: "thailand",
+    img: "/thailand.png",
+    region: "Southeast Asia",
+    duration: 10,
+    price: "$780",
+    age: "Ages 5+",
+    bgClass: "bg-[#09523c]",
+  },
+  {
+    id: 2,
+    name: "Vietnam",
+    slug: "vietnam",
+    img: "/vietnam.png",
+    region: "Southeast Asia",
+    duration: 12,
+    price: "$860",
+    age: "Ages 6+",
+    bgClass: "bg-[#0c7052]",
+  },
+  {
+    id: 3,
+    name: "Cambodia",
+    slug: "cambodia",
+    img: "/cambodia.png",
+    region: "Southeast Asia",
+    duration: 8,
+    price: "$660",
+    age: "Ages 8+",
+    bgClass: "bg-[#6c4212]",
+  },
+  {
+    id: 4,
+    name: "Costa Rica",
+    slug: "costa-rica",
+    img: "/costa-rica.png",
+    region: "Americas",
+    duration: 7,
+    price: "$1,500",
+    age: "Ages 5+",
+    bgClass: "bg-[#1d420b]",
+  },
+  {
+    id: 5,
+    name: "Patagonia",
+    slug: "patagonia",
+    img: "/patagonia.png",
+    region: "Americas",
+    duration: 10,
+    price: "$2,150",
+    age: "Ages 10+",
+    bgClass: "bg-[#0f4682]",
+  },
+  {
+    id: 6,
+    name: "Iceland",
+    slug: "iceland",
+    img: "/iceland.png",
+    region: "Europe",
+    duration: 7,
+    price: "$1,900",
+    age: "Ages 6+",
+    bgClass: "bg-[#252063]",
+  },
+  {
+    id: 7,
+    name: "Tanzania",
+    slug: "tanzania",
+    img: "/tanzania.png",
+    region: "Africa",
+    duration: 10,
+    price: "$1,700",
+    age: "Ages 6+",
+    bgClass: "bg-[#7c3216]",
+  },
+  {
+    id: 8,
+    name: "Norway",
+    slug: "norway",
+    img: "/norway.png",
+    region: "Europe",
+    duration: 8,
+    price: "$1,850",
+    age: "Ages 8+",
+    bgClass: "bg-[#033463]",
+  },
+  {
+    id: 9,
+    name: "Bali",
+    slug: "bali",
+    img: "/bali.png",
+    region: "Southeast Asia",
+    duration: 10,
+    price: "$820",
+    age: "Ages 6+",
+    bgClass: "bg-[#424441]",
+  },
+  {
+    id: 10,
+    name: "Nepal",
+    slug: "nepal",
+    img: "/nepal.png",
+    region: "South Asia",
+    duration: 9,
+    price: "$540",
+    age: "Ages 8+",
+    bgClass: "bg-[#134e4a]",
+  },
+  {
+    id: 11,
+    name: "Switzerland",
+    slug: "switzerland",
+    img: "/switzerland.png",
+    region: "Europe",
+    duration: 8,
+    price: "$2,100",
+    age: "Ages 6+",
+    bgClass: "bg-[#1e3a8a]",
+  },
+  {
+    id: 12,
+    name: "New Zealand",
+    slug: "new-zealand",
+    img: "/new-zealand.png",
+    region: "Oceania",
+    duration: 12,
+    price: "$2,500",
+    age: "Ages 8+",
+    bgClass: "bg-[#14532d]",
+  },
+  {
+    id: 13,
+    name: "Peru",
+    slug: "peru",
+    img: "/peru.png",
+    region: "South America",
+    duration: 11,
+    price: "$1,650",
+    age: "Ages 10+",
+    bgClass: "bg-[#7f1d1d]",
+  },
+  {
+    id: 14,
+    name: "Bhutan",
+    slug: "bhutan",
+    img: "/bhutan.png",
+    region: "South Asia",
+    duration: 6,
+    price: "$620",
+    age: "Ages 5+",
+    bgClass: "bg-[#854d0e]",
+  },
+  {
+    id: 15,
+    name: "Japan",
+    slug: "japan",
+    img: "/japan.png",
+    region: "East Asia",
+    duration: 9,
+    price: "$1,450",
+    age: "Ages 6+",
+    bgClass: "bg-[#4c1d95]",
+  },
+];
 
   // 1. FILTER STATES (Pure JS - Syntax error resolved)
   const [selectedRegion, setSelectedRegion] = useState("All");
@@ -179,14 +195,16 @@ function Page() {
   const filteredDestinations = useMemo(() => {
     return destinations.filter((item) => {
       // Region Match
-      const matchesRegion = selectedRegion === "All" || item.region === selectedRegion;
+      const matchesRegion =
+        selectedRegion === "All" || item.region === selectedRegion;
 
       // Price Match
       const numericPrice = parseInt(item.price.replace(/[^0-9]/g, ""), 10);
       const matchesPrice = maxPrice === "" || numericPrice <= maxPrice;
 
       // Duration Match
-      const matchesDuration = maxDuration === "" || item.duration <= maxDuration;
+      const matchesDuration =
+        maxDuration === "" || item.duration <= maxDuration;
 
       return matchesRegion && matchesPrice && matchesDuration;
     });
@@ -205,7 +223,10 @@ function Page() {
           1. HERO SECTION
           ========================================================================= */}
       <div className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen overflow-hidden bg-[#0d1b2a] flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3a86c8] via-[#1a3d54] to-[#0d1b2a] z-0" aria-hidden="true" />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-[#3a86c8] via-[#1a3d54] to-[#0d1b2a] z-0"
+          aria-hidden="true"
+        />
         <div className="absolute w-[60vw] h-[60vw] rounded-full bg-white/5 blur-[120px] top-1/4 left-1/2 -translate-x-1/2 z-5 pointer-events-none" />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center z-20 select-none pointer-events-none px-4">
@@ -215,7 +236,9 @@ function Page() {
             transition={{ duration: 1, delay: 0.6 }}
             className="text-white tracking-[0.4em] uppercase text-xs md:text-sm mb-4 font-semibold  bg-[#022c22] py-1 px-5 rounded-full flex gap-2 items-center"
           >
-            <TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400"/>Unforgettable Journeys<TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400"/>
+            <TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400" />
+            Unforgettable Journeys
+            <TiStarFullOutline className="hidden lg:flex text-2xl text-yellow-400" />
           </motion.span>
           <motion.h1
             initial={{ y: "40vh", opacity: 0 }}
@@ -245,14 +268,15 @@ function Page() {
             Exploring Our Top Destinations
           </h2>
           <p className="text-base md:text-lg text-emerald-950/70 max-w-xl mx-auto leading-relaxed font-medium">
-            Discover breathtaking trekking routes, stunning landscapes, and unforgettable adventures across the world's most beautiful destinations.
+            Discover breathtaking trekking routes, stunning landscapes, and
+            unforgettable adventures across the world's most beautiful
+            destinations.
           </p>
         </div>
 
         {/* INPUT AND CONTROL FILTER BAR */}
         <div className="max-w-7xl mx-auto bg-white border border-emerald-950/5 rounded-2xl shadow-[0_4px_20px_rgba(2,44,34,0.03)] p-6 md:p-8 mb-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-end">
-            
             {/* Filter by Region (Dropdown) */}
             <div className="flex flex-col gap-2">
               <label className="text-xs font-bold uppercase tracking-wider text-emerald-950/60">
@@ -280,7 +304,11 @@ function Page() {
                 type="number"
                 placeholder="e.g. 1500"
                 value={maxPrice}
-                onChange={(e) => setMaxPrice(e.target.value === "" ? "" : Number(e.target.value))}
+                onChange={(e) =>
+                  setMaxPrice(
+                    e.target.value === "" ? "" : Number(e.target.value),
+                  )
+                }
                 className="w-full bg-[#f4f6f9] text-[#022c22] font-semibold text-sm rounded-xl px-4 py-3 border border-transparent focus:border-[#0F6E56] focus:bg-white outline-none transition duration-200"
               />
             </div>
@@ -294,7 +322,11 @@ function Page() {
                 type="number"
                 placeholder="e.g. 10"
                 value={maxDuration}
-                onChange={(e) => setMaxDuration(e.target.value === "" ? "" : Number(e.target.value))}
+                onChange={(e) =>
+                  setMaxDuration(
+                    e.target.value === "" ? "" : Number(e.target.value),
+                  )
+                }
                 className="w-full bg-[#f4f6f9] text-[#022c22] font-semibold text-sm rounded-xl px-4 py-3 border border-transparent focus:border-[#0F6E56] focus:bg-white outline-none transition duration-200"
               />
             </div>
@@ -309,7 +341,6 @@ function Page() {
                 Reset Filters
               </button>
             </div>
-
           </div>
         </div>
 
@@ -323,7 +354,9 @@ function Page() {
               >
                 <div>
                   {/* Image Wrap */}
-                  <div className={`h-52 w-full ${item.bgClass} relative overflow-hidden`}>
+                  <div
+                    className={`h-52 w-full ${item.bgClass} relative overflow-hidden`}
+                  >
                     <img
                       src={`${item.img}`}
                       alt={item.name}
@@ -361,9 +394,12 @@ function Page() {
                       {item.price}
                     </h4>
                   </div>
-                  <button className="px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-[#022c22] rounded-xl hover:bg-[#0F6E56] shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer active:scale-95">
-                    Explore
-                  </button>
+                  <p>{item.slug}</p>
+                  <Link href={`/destination/${item.slug}`}>
+                    <button className="bg-[#022c22] text-white px-5 py-1 rounded-lg cursor-pointer flex items-center gap-1">
+                      View More
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -371,9 +407,12 @@ function Page() {
         ) : (
           /* Empty Search State Handling */
           <div className="text-center py-16 max-w-md mx-auto">
-            <h3 className="text-xl font-bold text-emerald-950 mb-2">No Matching Destinations</h3>
+            <h3 className="text-xl font-bold text-emerald-950 mb-2">
+              No Matching Destinations
+            </h3>
             <p className="text-sm text-emerald-950/60 mb-6">
-              We couldn't find matches for this custom criteria. Try reducing inputs or resetting filters.
+              We couldn't find matches for this custom criteria. Try reducing
+              inputs or resetting filters.
             </p>
             <button
               onClick={handleResetFilters}
@@ -451,7 +490,6 @@ function Page() {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
