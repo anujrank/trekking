@@ -394,7 +394,6 @@ function Page() {
                       {item.price}
                     </h4>
                   </div>
-                  <p>{item.slug}</p>
                   <Link href={`/destination/${item.slug}`}>
                     <button className="bg-[#022c22] text-white px-5 py-1 rounded-lg cursor-pointer flex items-center gap-1">
                       View More
