@@ -39,7 +39,7 @@ export default async function Page({ params }) {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent" />
 
         <div className="relative z-10 lg:ml-28 max-w-5xl px-6 md:px-12 pb-16 text-white">
-          <span className="inline-block px-3 py-1 bg-indigo-600/80 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
+          <span className="inline-block px-5 py-1 bg-[#022c22] backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
             Explore Destination
           </span>
           <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-4 drop-shadow-sm">
