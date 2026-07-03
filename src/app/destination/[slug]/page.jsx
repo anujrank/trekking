@@ -6,7 +6,10 @@ export default async function Page({ params }) {
 
   console.log("Slug:", slug);
   console.log("Explore Data:", exploreData);
-  console.log("Slugs:", exploreData.map((item) => item.slug));
+  console.log(
+    "Slugs:",
+    exploreData.map((item) => item.slug),
+  );
 
   const destination = exploreData.find((item) => item.slug === slug);
 
@@ -30,22 +33,31 @@ export default async function Page({ params }) {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-[#022c22] selection:text-white">
       {/* 1. HERO SECTION */}
-      <div className="relative w-full h-[70vh] flex items-end justify-start overflow-hidden">
+      <div className="relative w-full h-[70vh] flex items-end justify-start overflow-hidden bg-slate-950">
+        {/* Background Image */}
         <img
           src={destination.image}
           alt={destination.name}
-          className="w-full h-full object-cover absolute inset-0 transform scale-102 transition-transform duration-1000 ease-out"
+          className="w-full h-full object-cover absolute inset-0 transform scale-102 transition-transform duration-1000 ease-out opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent" />
 
+        {/* Deepened Gradient Overlay for Higher Contrast */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent" />
+
+        {/* Content Area */}
         <div className="relative z-10 lg:ml-28 max-w-5xl px-6 md:px-12 pb-16 text-white">
-          <span className="inline-block px-5 py-1 bg-[#022c22] backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-4">
+          {/* High Visibility Badge */}
+          <span className="inline-block px-5 py-1.5 bg-[#022c22] backdrop-blur-md rounded-full text-xs uppercase tracking-wider mb-4 text-white">
             Explore Destination
           </span>
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-4 drop-shadow-sm">
+
+          {/* Heading with enhanced text-shadow */}
+          <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
             {destination.name}
           </h1>
-          <p className="text-lg md:text-xl text-slate-200 max-w-2xl font-light leading-relaxed">
+
+          {/* Paragraph text bumped up to text-slate-100 */}
+          <p className="text-lg md:text-xl text-slate-100 max-w-2xl font-normal leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
             {destination.description}
           </p>
         </div>
@@ -82,7 +94,7 @@ export default async function Page({ params }) {
                     </div>
                     <div className="w-full sm:w-3/5 space-y-3">
                       <div className="flex items-center gap-3">
-                        <span className="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-50 text-indigo-600 font-bold text-xs">
+                        <span className="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-50 text-[#022c22] font-bold text-lg">
                           {index + 1}
                         </span>
                         <h3 className="text-xl font-bold text-slate-900">
